@@ -13,6 +13,7 @@ $appConfig = [
     'version' => '1.1.5',
     'tagline' => 'Modern, High-Performance Local Development Suite for Windows',
     'description' => 'Run multi-version PHP (8.1 – 8.5), automated NGINX virtual hosts with wildcard SSL, portable MariaDB, and instant Cloudflare public sharing. 100% offline, zero UAC elevation loops.',
+    'siteUrl' => 'https://c-script.opik.net/',
     'githubUrl' => 'https://github.com/CHAMI-csr/c-script-localhost-panel',
     'releaseDate' => 'October 2026',
     'currentYear' => date('Y'),
@@ -31,18 +32,21 @@ $appConfig = [
   <meta name="description" content="<?php echo htmlspecialchars($appConfig['description']); ?>">
   <meta name="keywords" content="c-script localhost panel, windows php panel, nginx windows, local development, mariadb windows, laravel windows, herd alternative, xampp alternative, laragon alternative, wildcard ssl test domain">
   <meta name="author" content="Chamika Sandeepa">
+  <link rel="canonical" href="https://c-script.opik.net/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://c-script.opik.net/">
   <meta property="og:title" content="<?php echo htmlspecialchars($appConfig['name']); ?> — v<?php echo htmlspecialchars($appConfig['version']); ?>">
   <meta property="og:description" content="<?php echo htmlspecialchars($appConfig['description']); ?>">
-  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:image" content="https://c-script.opik.net/assets/images/logo.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://c-script.opik.net/">
   <meta name="twitter:title" content="<?php echo htmlspecialchars($appConfig['name']); ?> — v<?php echo htmlspecialchars($appConfig['version']); ?>">
   <meta name="twitter:description" content="<?php echo htmlspecialchars($appConfig['description']); ?>">
-  <meta name="twitter:image" content="assets/images/logo.png">
+  <meta name="twitter:image" content="https://c-script.opik.net/assets/images/logo.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png">

@@ -63,7 +63,7 @@
 
         <div>
           <!-- Direct Download CTA -->
-          <a href="../dist/C-Script%20LocalHost%20Panel%20Setup%201.1.5.exe" download
+          <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.5/C-Script-LocalHost-Panel-Setup-1.1.5.exe"
              class="btn-primary-modern flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl text-xs font-bold text-center shadow-lg hover:shadow-xl mb-3 transition-all"
              onclick="showToast('Starting download of C-Script LocalHost Panel Setup 1.1.5.exe...', 'success')">
             <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@
 
           <!-- Portable Download Link -->
           <div class="text-center">
-            <a href="../dist/C-Script%20LocalHost%20Panel%201.1.5.exe" download
+            <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.5/C-Script-LocalHost-Panel-1.1.5.exe"
                class="text-[11px] font-semibold text-indigo-600 hover:text-indigo-800 transition-colors"
                onclick="showToast('Starting download of C-Script Portable Executable...', 'success')">
               Or download Portable Standalone (.exe) →
