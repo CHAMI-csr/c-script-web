@@ -53,13 +53,19 @@
             <span>C-Script LocalHost Panel — Product Demonstration</span>
           </div>
 
-          <!-- Video Custom Controls (Mute / Fullscreen) -->
+          <!-- Video Custom Controls (Mute Only) -->
           <div class="flex items-center gap-2">
-            <button id="video-toggle-mute" class="text-slate-400 hover:text-white text-xs px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition-colors">
-              🔇 Unmute
-            </button>
-            <button id="video-toggle-fullscreen" class="text-slate-400 hover:text-white text-xs px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition-colors" title="Toggle Fullscreen">
-              ⛶ Fullscreen
+            <button id="video-toggle-mute" 
+                    type="button"
+                    class="group flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/70 transition-colors cursor-pointer"
+                    title="Toggle Audio">
+              <span id="mute-icon" class="flex items-center">
+                <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                </svg>
+              </span>
+              <span id="mute-text">Unmute</span>
             </button>
           </div>
         </div>
@@ -68,21 +74,29 @@
         <div class="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
           
           <video id="c-script-marketing-video"
-                 class="w-full h-full object-cover cursor-pointer"
-                 preload="metadata"
-                 playsinline
+                 class="w-full h-full object-cover cursor-pointer select-none"
+                 autoplay
+                 loop
                  muted
-                 controls>
+                 playsinline
+                 preload="auto">
             <source src="C-Script_LocalHost_Marketing_Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
 
-          <!-- Big Play Button Overlay -->
-          <div id="video-play-overlay" class="video-overlay-play" title="Play Video Demo">
-            <svg class="w-8 h-8 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </div>
+          <!-- Floating Glassmorphic Mute/Unmute Badge -->
+          <button id="video-floating-mute-btn"
+                  type="button"
+                  class="absolute bottom-4 right-4 z-20 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 backdrop-blur-md border border-white/15 text-white text-xs font-semibold shadow-lg hover:shadow-indigo-500/20 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
+                  title="Toggle Audio">
+            <span id="floating-mute-icon" class="flex items-center">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+              </svg>
+            </span>
+            <span id="floating-mute-text">Sound Off</span>
+          </button>
 
         </div>
 

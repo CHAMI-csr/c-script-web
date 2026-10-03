@@ -288,61 +288,115 @@ function initFeatureTabs() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Marketing Video Showcase Player
+   4. Marketing Video Showcase Player (Autoplay with Mute/Unmute Control)
    -------------------------------------------------------------------------- */
 function initVideoPlayer() {
   const video = document.getElementById('c-script-marketing-video');
-  const playOverlay = document.getElementById('video-play-overlay');
   const muteBtn = document.getElementById('video-toggle-mute');
-  const fsBtn = document.getElementById('video-toggle-fullscreen');
+  const muteIcon = document.getElementById('mute-icon');
+  const muteText = document.getElementById('mute-text');
+  const floatMuteBtn = document.getElementById('video-floating-mute-btn');
+  const floatMuteIcon = document.getElementById('floating-mute-icon');
+  const floatMuteText = document.getElementById('floating-mute-text');
 
   if (!video) return;
 
-  if (playOverlay) {
-    playOverlay.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-        playOverlay.classList.add('hidden');
+  const iconMutedSvg = `
+    <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+    </svg>`;
+
+  const iconUnmutedSvg = `
+    <svg class="w-3.5 h-3.5 text-indigo-400 group-hover:text-indigo-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+    </svg>`;
+
+  const floatMutedSvg = `
+    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+    </svg>`;
+
+  const floatUnmutedSvg = `
+    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+    </svg>`;
+
+  function updateMuteUI(isMuted) {
+    if (muteIcon) muteIcon.innerHTML = isMuted ? iconMutedSvg : iconUnmutedSvg;
+    if (muteText) muteText.textContent = isMuted ? 'Unmute' : 'Mute';
+
+    if (floatMuteIcon) floatMuteIcon.innerHTML = isMuted ? floatMutedSvg : floatUnmutedSvg;
+    if (floatMuteText) floatMuteText.textContent = isMuted ? 'Sound Off' : 'Sound On';
+
+    if (floatMuteBtn) {
+      if (isMuted) {
+        floatMuteBtn.classList.remove('border-emerald-500/50', 'text-emerald-300', 'bg-slate-900/90');
+        floatMuteBtn.classList.add('border-white/15', 'text-white', 'bg-slate-900/80');
       } else {
-        video.pause();
-        playOverlay.classList.remove('hidden');
+        floatMuteBtn.classList.remove('border-white/15', 'text-white', 'bg-slate-900/80');
+        floatMuteBtn.classList.add('border-emerald-500/50', 'text-emerald-300', 'bg-slate-900/90');
       }
-    });
+    }
   }
 
-  video.addEventListener('click', () => {
+  function toggleMute() {
+    video.muted = !video.muted;
     if (video.paused) {
-      video.play();
-      if (playOverlay) playOverlay.classList.add('hidden');
-    } else {
-      video.pause();
-      if (playOverlay) playOverlay.classList.remove('hidden');
+      video.play().catch(() => {});
     }
-  });
+    updateMuteUI(video.muted);
+    showToast(video.muted ? 'Audio Muted' : 'Audio Enabled 🔊', 'info');
+  }
 
+  // Ensure video is set to muted for reliable browser autoplay policy
+  video.muted = true;
+  updateMuteUI(true);
+
+  // Attempt Autoplay
+  const startAutoplay = () => {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Fallback: start on first user interaction
+        const startOnInteract = () => {
+          video.play().catch(() => {});
+          window.removeEventListener('click', startOnInteract);
+          window.removeEventListener('touchstart', startOnInteract);
+        };
+        window.addEventListener('click', startOnInteract, { once: true });
+        window.addEventListener('touchstart', startOnInteract, { once: true });
+      });
+    }
+  };
+
+  startAutoplay();
+
+  // Keep playing on loop smoothly
   video.addEventListener('ended', () => {
-    if (playOverlay) playOverlay.classList.remove('hidden');
+    video.currentTime = 0;
+    video.play().catch(() => {});
   });
 
   if (muteBtn) {
     muteBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      video.muted = !video.muted;
-      muteBtn.innerText = video.muted ? '🔇 Unmute' : '🔊 Mute';
-      showToast(video.muted ? 'Video Muted' : 'Audio Enabled', 'info');
+      toggleMute();
     });
   }
 
-  if (fsBtn) {
-    fsBtn.addEventListener('click', (e) => {
+  if (floatMuteBtn) {
+    floatMuteBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      if (video.requestFullscreen) {
-        video.requestFullscreen();
-      } else if (video.webkitRequestFullscreen) {
-        video.webkitRequestFullscreen();
-      }
+      toggleMute();
     });
   }
+
+  // Clicking on video itself also toggles mute
+  video.addEventListener('click', () => {
+    toggleMute();
+  });
 }
 
 /* --------------------------------------------------------------------------
