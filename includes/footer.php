@@ -92,7 +92,7 @@
         </ul>
 
         <div class="p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-500">
-          Licensed under the permissive <strong>MIT License</strong>. Free for personal and commercial use.
+          Protected under <strong>Proprietary Terms</strong>. Free to use for development. Unauthorized copying, modification, or redistribution is strictly prohibited.
         </div>
       </div>
 

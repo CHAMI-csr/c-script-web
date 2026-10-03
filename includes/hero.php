@@ -38,7 +38,7 @@
           </svg>
           <div class="text-left">
             <div class="leading-none">Download for Windows</div>
-            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v1.1.5 (x64) • Free &amp; Open Source</div>
+            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v1.1.5 (x64) • Official Release</div>
           </div>
           <svg class="w-4 h-4 ml-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -112,8 +112,8 @@
         <div class="flex items-start gap-2.5">
           <div class="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</div>
           <div>
-            <div class="text-xs font-bold text-slate-900">100% Free &amp; Open Source</div>
-            <div class="text-[11px] text-slate-500">Permissive MIT License</div>
+            <div class="text-xs font-bold text-slate-900">Free to Use</div>
+            <div class="text-[11px] text-slate-500">All Rights Reserved</div>
           </div>
         </div>
 

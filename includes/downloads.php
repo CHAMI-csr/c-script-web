@@ -10,7 +10,7 @@
         Download for Your Operating System.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Free &amp; open source under the MIT License. Windows is available for instant download today. 
+        Free to download and use. Copyright &copy; 2026 C.S. Ranasinha. All Rights Reserved. Windows is available for instant download today. 
         macOS and Linux builds are in active development.
       </p>
     </div>
@@ -199,8 +199,8 @@
           </svg>
         </div>
         <div>
-          <h4 class="text-sm font-bold text-slate-900">Proudly Free &amp; Open Source</h4>
-          <p class="text-xs text-slate-500 mt-0.5">Explore the source code, inspect release notes, or report issues directly on GitHub.</p>
+          <h4 class="text-sm font-bold text-slate-900">Official GitHub Repository</h4>
+          <p class="text-xs text-slate-500 mt-0.5">Explore release notes, star the project, or report issues directly on GitHub.</p>
         </div>
       </div>
 
