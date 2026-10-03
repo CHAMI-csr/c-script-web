@@ -57,7 +57,8 @@
           <div class="flex items-center gap-2">
             <button id="video-toggle-mute" 
                     type="button"
-                    class="group flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/70 transition-colors cursor-pointer"
+                    onclick="toggleVideoSound(event)"
+                    class="group flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/70 transition-colors cursor-pointer select-none"
                     title="Toggle Audio">
               <span id="mute-icon" class="flex items-center">
                 <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +80,8 @@
                  loop
                  muted
                  playsinline
-                 preload="auto">
+                 preload="auto"
+                 onclick="toggleVideoSound(event)">
             <source src="C-Script_LocalHost_Marketing_Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -87,7 +89,8 @@
           <!-- Floating Glassmorphic Mute/Unmute Badge -->
           <button id="video-floating-mute-btn"
                   type="button"
-                  class="absolute bottom-4 right-4 z-20 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 backdrop-blur-md border border-white/15 text-white text-xs font-semibold shadow-lg hover:shadow-indigo-500/20 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
+                  onclick="toggleVideoSound(event)"
+                  class="absolute bottom-4 right-4 z-30 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 hover:bg-slate-950 backdrop-blur-md border border-white/20 text-white text-xs font-semibold shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer select-none"
                   title="Toggle Audio">
             <span id="floating-mute-icon" class="flex items-center">
               <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,6 +102,62 @@
           </button>
 
         </div>
+
+        <script>
+        (function() {
+          const iconMutedSvg = '<svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" /></svg>';
+          const iconUnmutedSvg = '<svg class="w-3.5 h-3.5 text-indigo-400 group-hover:text-indigo-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>';
+          const floatMutedSvg = '<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" /></svg>';
+          const floatUnmutedSvg = '<svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>';
+
+          window.updateVideoMuteUI = function(isMuted) {
+            const muteIcon = document.getElementById('mute-icon');
+            const muteText = document.getElementById('mute-text');
+            const floatBtn = document.getElementById('video-floating-mute-btn');
+            const floatIcon = document.getElementById('floating-mute-icon');
+            const floatText = document.getElementById('floating-mute-text');
+
+            if (muteIcon) muteIcon.innerHTML = isMuted ? iconMutedSvg : iconUnmutedSvg;
+            if (muteText) muteText.textContent = isMuted ? 'Unmute' : 'Mute';
+
+            if (floatIcon) floatIcon.innerHTML = isMuted ? floatMutedSvg : floatUnmutedSvg;
+            if (floatText) floatText.textContent = isMuted ? 'Sound Off' : 'Sound On';
+
+            if (floatBtn) {
+              if (isMuted) {
+                floatBtn.classList.remove('border-emerald-500/50', 'text-emerald-300');
+                floatBtn.classList.add('border-white/20', 'text-white');
+              } else {
+                floatBtn.classList.remove('border-white/20', 'text-white');
+                floatBtn.classList.add('border-emerald-500/50', 'text-emerald-300');
+              }
+            }
+          };
+
+          window.toggleVideoSound = function(e) {
+            if (e) {
+              if (e.preventDefault) e.preventDefault();
+              if (e.stopPropagation) e.stopPropagation();
+            }
+            const video = document.getElementById('c-script-marketing-video');
+            if (!video) return;
+
+            video.muted = !video.muted;
+            if (!video.muted) {
+              video.volume = 1.0;
+            }
+            if (video.paused) {
+              video.play().catch(function() {});
+            }
+            if (window.updateVideoMuteUI) {
+              window.updateVideoMuteUI(video.muted);
+            }
+            if (typeof showToast === 'function') {
+              showToast(video.muted ? 'Audio Muted' : 'Audio Enabled 🔊', 'info');
+            }
+          };
+        })();
+        </script>
 
         <!-- App Bottom Status Bar -->
         <div class="bg-slate-950 px-4 py-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-400">

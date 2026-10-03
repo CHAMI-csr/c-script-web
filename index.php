@@ -78,7 +78,8 @@ $appConfig = [
   </script>
 
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <?php $assetVersion = file_exists(__DIR__ . '/assets/js/main.js') ? filemtime(__DIR__ . '/assets/js/main.js') : time(); ?>
+  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo $assetVersion; ?>">
 </head>
 <body class="bg-white text-slate-900 antialiased selection:bg-indigo-600 selection:text-white">
 
@@ -116,6 +117,6 @@ $appConfig = [
   <?php require_once __DIR__ . '/includes/footer.php'; ?>
 
   <!-- Client JavaScript Interactions -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=<?php echo $assetVersion; ?>"></script>
 </body>
 </html>
