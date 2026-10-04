@@ -14,7 +14,7 @@
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
         </span>
-        <span>C-Script LocalHost Panel v1.1.5 is Live</span>
+        <span>C-Script LocalHost Panel v1.1.6 is Live</span>
         <span class="text-slate-400">•</span>
         <span class="text-indigo-600/90 font-medium">Watch 2-Min Walkthrough →</span>
       </div>
@@ -38,7 +38,7 @@
           </svg>
           <div class="text-left">
             <div class="leading-none">Download for Windows</div>
-            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v1.1.5 (x64) • Official Release</div>
+            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v1.1.6 (x64) • Official Release</div>
           </div>
           <svg class="w-4 h-4 ml-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>

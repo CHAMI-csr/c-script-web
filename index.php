@@ -10,7 +10,7 @@
 
 $appConfig = [
     'name' => 'C-Script LocalHost Panel',
-    'version' => '1.1.5',
+    'version' => '1.1.6',
     'tagline' => 'Modern, High-Performance Local Development Suite for Windows',
     'description' => 'Run multi-version PHP (8.1 – 8.5), automated NGINX virtual hosts with wildcard SSL, portable MariaDB, and instant Cloudflare public sharing. 100% offline, zero UAC elevation loops.',
     'siteUrl' => 'https://c-script.opik.net/',
