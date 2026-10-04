@@ -15,7 +15,7 @@
               C-Script LocalHost Panel
             </span>
             <span class="text-[11px] font-semibold text-slate-500 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-full">
-              v1.1.5
+              v<?php echo htmlspecialchars($appConfig['version']); ?>
             </span>
           </div>
 
@@ -86,7 +86,7 @@
           </li>
           <li>
             <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases" target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 transition-colors">
-              Release Notes (v1.1.5)
+              Release Notes (v<?php echo htmlspecialchars($appConfig['version']); ?>)
             </a>
           </li>
         </ul>

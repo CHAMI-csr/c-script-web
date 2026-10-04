@@ -102,7 +102,7 @@
           Ready to experience frictionless local development on Windows?
         </span>
         <a href="#downloads" class="btn-accent-modern text-xs font-bold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all">
-          Download C-Script v1.1.5 (Free)
+          Download C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> (Free)
         </a>
       </div>
     </div>

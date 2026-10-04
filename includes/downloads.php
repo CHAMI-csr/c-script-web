@@ -37,7 +37,7 @@
             <div class="text-right">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
-                <span>Active v1.1.6</span>
+                <span>Active v<?php echo htmlspecialchars($appConfig['version']); ?></span>
               </span>
               <div class="text-[11px] text-slate-500 mt-1">Windows 10 / 11 (64-bit)</div>
             </div>
@@ -63,9 +63,9 @@
 
         <div>
           <!-- Direct Download CTA -->
-          <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.6/C-Script-LocalHost-Panel-Setup-1.1.6.exe"
+          <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script-LocalHost-Panel-Setup-<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
              class="btn-primary-modern flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl text-xs font-bold text-center shadow-lg hover:shadow-xl mb-3 transition-all"
-             onclick="showToast('Starting download of C-Script LocalHost Panel Setup 1.1.6.exe...', 'success')">
+             onclick="showToast('Starting download of C-Script LocalHost Panel Setup <?php echo htmlspecialchars($appConfig['version']); ?>.exe...', 'success')">
             <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
@@ -74,9 +74,9 @@
 
           <!-- Portable Download Link -->
           <div class="text-center">
-            <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.6/C-Script-LocalHost-Panel-1.1.6.exe"
+            <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script-LocalHost-Panel-<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
                class="text-[11px] font-semibold text-indigo-600 hover:text-indigo-800 transition-colors"
-               onclick="showToast('Starting download of C-Script Portable Executable...', 'success')">
+               onclick="showToast('Starting download of C-Script Portable Executable v<?php echo htmlspecialchars($appConfig['version']); ?>...', 'success')">
               Or download Portable Standalone (.exe) →
             </a>
           </div>

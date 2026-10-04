@@ -14,7 +14,7 @@
               C-Script
             </span>
             <span class="text-xs font-semibold text-slate-500 bg-slate-100 border border-slate-200/80 px-2 py-0.5 rounded-full">
-              v1.1.5
+              v<?php echo htmlspecialchars($appConfig['version']); ?>
             </span>
           </div>
           <span class="text-[11px] font-medium text-slate-500 tracking-tight -mt-0.5">
@@ -60,7 +60,7 @@
           <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.849"/>
           </svg>
-          <span>Download v1.1.5</span>
+          <span>Download v<?php echo htmlspecialchars($appConfig['version']); ?></span>
         </a>
       </div>
 
@@ -89,7 +89,7 @@
     <a href="#faq" class="block px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">FAQ</a>
     <div class="pt-3 flex flex-col gap-2">
       <a href="#downloads" class="btn-primary-modern flex items-center justify-center gap-2 w-full py-2.5 text-sm font-bold rounded-lg text-center">
-        Download for Windows (v1.1.5)
+        Download for Windows (v<?php echo htmlspecialchars($appConfig['version']); ?>)
       </a>
       <a href="https://github.com/CHAMI-csr/c-script-localhost-panel" target="_blank" class="flex items-center justify-center gap-2 w-full py-2 text-sm font-medium text-slate-700 border border-slate-200 rounded-lg text-center hover:bg-slate-50">
         Star on GitHub

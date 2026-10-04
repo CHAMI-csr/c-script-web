@@ -14,7 +14,7 @@
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
         </span>
-        <span>C-Script LocalHost Panel v1.1.6 is Live</span>
+        <span>C-Script LocalHost Panel v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
         <span class="text-indigo-600/90 font-medium">Watch 2-Min Walkthrough →</span>
       </div>
@@ -38,7 +38,7 @@
           </svg>
           <div class="text-left">
             <div class="leading-none">Download for Windows</div>
-            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v1.1.6 (x64) • Official Release</div>
+            <div class="text-[10px] text-slate-300 font-normal mt-0.5">v<?php echo htmlspecialchars($appConfig['version']); ?> (x64) • Official Release</div>
           </div>
           <svg class="w-4 h-4 ml-1 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -91,10 +91,10 @@
         <div class="command-copy-box">
           <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none pr-3">
             <span class="text-slate-500 select-none">PS&gt;</span>
-            <span class="text-indigo-300 font-mono text-xs sm:text-[13px] select-all">irm https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.5/install.ps1 | iex</span>
+            <span class="text-indigo-300 font-mono text-xs sm:text-[13px] select-all">irm https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/install.ps1 | iex</span>
           </div>
           <button class="btn-copy-command flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition-colors shrink-0"
-                  data-copy-text="irm https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v1.1.5/install.ps1 | iex">
+                  data-copy-text="irm https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/install.ps1 | iex">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
             </svg>
