@@ -58,6 +58,9 @@
             <div class="flex items-center gap-2 text-xs text-slate-700">
               <span class="text-emerald-500 font-bold">✓</span> Pre-bundled offline runtime (~184 MB)
             </div>
+            <div class="flex items-center gap-2 text-xs text-indigo-700 font-medium">
+              <span class="text-indigo-600 font-bold">✨</span> New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Dropdown safeguards &amp; App Update changelog
+            </div>
           </div>
         </div>
 
