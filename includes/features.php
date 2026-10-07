@@ -90,7 +90,7 @@
             Clean .test Domains &amp; Wildcard SSL
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Browse projects at <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">https://myproject.test</code> without typing ugly port numbers. NGINX auto-provisions reverse proxies and binds wildcard certificates with zero browser security warnings.
+            Browse projects at <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">https://myproject.test</code> without typing ugly port numbers. NGINX boots automatically when your site starts, provisions reverse proxies, and binds wildcard certificates with zero browser security warnings.
           </p>
         </div>
         <div class="text-xs font-medium text-emerald-600 flex items-center gap-1.5 pt-4 border-t border-slate-100">
