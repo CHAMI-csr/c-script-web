@@ -71,7 +71,24 @@
         </div>
       </div>
 
-      <!-- Question 4 -->
+      <!-- Question 4: Smart Directory Indexing -->
+      <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
+        <div class="faq-trigger flex items-center justify-between gap-4">
+          <h3 class="text-base font-bold text-slate-900">
+            What happens if my project folder doesn't have an index.php file?
+          </h3>
+          <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">
+            ↓
+          </span>
+        </div>
+        <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
+          <p>
+            In v1.2.0, you'll never encounter a 403 Forbidden error or blank page! C-Script includes built-in <strong>Smart Developer Directory Indexing (Autoindex)</strong>. When <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.php</code> or <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.html</code> is missing, C-Script provides an instant, modern file explorer with path breadcrumbs, live search filtering, and 1-click execution for standalone PHP, HTML, and JS scripts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
           <h3 class="text-base font-bold text-slate-900">
@@ -88,7 +105,7 @@
         </div>
       </div>
 
-      <!-- Question 5 -->
+      <!-- Question 6 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
           <h3 class="text-base font-bold text-slate-900">
@@ -105,7 +122,7 @@
         </div>
       </div>
 
-      <!-- Question 6 -->
+      <!-- Question 7 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
           <h3 class="text-base font-bold text-slate-900">

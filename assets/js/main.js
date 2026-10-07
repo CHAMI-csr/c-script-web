@@ -104,6 +104,31 @@ Copyright (c) The PHP Group
 Zend Engine v4.4.26, with Zend OPcache v8.4.26
 ⚡ Active Server: http://cms.test -> NGINX Reverse Proxy -> Port 8000`
   },
+  autoindex: {
+    title: 'Smart Developer Directory Indexing (Autoindex)',
+    subtitle: 'No index.php? Instant modern file browser with click-to-run execution and real-time search.',
+    badge: 'New in v1.2.0',
+    details: [
+      'Automatic fallback: Renders a sleek directory explorer when index.php or index.html is missing in any project folder.',
+      '1-Click Script Execution: Launch standalone PHP, HTML, or JavaScript test files directly with one click.',
+      'Real-time filter: Instant client-side search box to quickly filter dozens of files and scripts.',
+      'Traversal protection: Safe breadcrumb navigation with built-in path-traversal prevention safeguards.'
+    ],
+    codePreview: `<!-- C-Script Smart Autoindex Engine (src/autoindexRouter.php) -->
+Host: https://myproject.test/api/
+Path: C:/Users/Developer/Projects/myproject/api
+
+[DIR]  .. (Parent Directory)
+[DIR]  v1/                    Modified: Today 18:24    4.0 KB
+[PHP]  quick-test.php         Modified: Today 18:25    1.8 KB  -> [Run Script]
+[PHP]  webhook-stripe.php     Modified: Today 17:10    3.4 KB  -> [Run Script]
+[JSON] config.local.json      Modified: Today 16:02    0.9 KB  -> [Open File]`,
+    terminalTitle: 'c-script-autoindex • status: active',
+    terminalOutput: `[Autoindex Engine] 📂 Virtual Host: https://myproject.test/api/
+Root File Check: index.php [NOT FOUND] -> Autoindex Activated
+Total Items: 12 files, 3 folders (Indexed in 1.4ms)
+Security: Directory traversal guard passed (Within project root)`
+  },
   nginx: {
     title: 'Standalone NGINX & Automated Wildcard SSL',
     subtitle: 'Clean .test domains without clumsy port numbers (:8000). Full HTTPS out of the box.',

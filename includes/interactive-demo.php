@@ -20,6 +20,10 @@
       <button class="tab-pill active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shrink-0 cursor-pointer" data-feature="php">
         🐘 Multi-Version PHP
       </button>
+      <button class="tab-pill px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 shrink-0 cursor-pointer flex items-center gap-1.5" data-feature="autoindex">
+        <span>📂 Smart Autoindex</span>
+        <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-1.5 py-0.2 rounded-full">New</span>
+      </button>
       <button class="tab-pill px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 shrink-0 cursor-pointer" data-feature="nginx">
         🌐 NGINX &amp; Wildcard SSL
       </button>

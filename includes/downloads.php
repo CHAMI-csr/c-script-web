@@ -59,7 +59,7 @@
               <span class="text-emerald-500 font-bold">✓</span> Pre-bundled offline runtime (~184 MB)
             </div>
             <div class="flex items-center gap-2 text-xs text-indigo-700 font-medium">
-              <span class="text-indigo-600 font-bold">✨</span> New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Visual C++ runtime auto-resolver (PHP 8.1–8.5) &amp; dropdown safeguards
+              <span class="text-indigo-600 font-bold">✨</span> New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Smart Developer Directory Indexing (click-to-run), "What's New" release modal &amp; UI stability enhancements
             </div>
           </div>
         </div>

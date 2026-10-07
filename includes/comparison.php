@@ -62,6 +62,17 @@
             </tr>
 
             <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">
+                Developer Directory Indexing
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">New v1.2</span>
+              </td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Modern UI with 1-Click Run &amp; Search</td>
+              <td class="py-4 px-6 text-rose-500">1990s Apache table or 403</td>
+              <td class="py-4 px-6 text-slate-500">Plain listing or 403</td>
+              <td class="py-4 px-6 text-slate-500">Manual container config</td>
+            </tr>
+
+            <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">Instant Public Client Sharing</td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Built-in Cloudflare Tunnel</td>
               <td class="py-4 px-6 text-rose-500">None</td>
