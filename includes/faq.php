@@ -139,6 +139,26 @@
         </div>
       </div>
 
+      <!-- Question 8: SmartScreen / Windows Warning -->
+      <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
+        <div class="faq-trigger flex items-center justify-between gap-4">
+          <h3 class="text-base font-bold text-slate-900">
+            Why does Windows Defender SmartScreen say "Unrecognized App" during install?
+          </h3>
+          <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">
+            ↓
+          </span>
+        </div>
+        <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
+          <p>
+            This is standard Windows behavior for newly compiled open-source binaries that don't yet have high cloud download reputation. Because C-Script interacts with developer system networking (binding ports 80/443 and updating the local <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">hosts</code> file for test domains), SmartScreen flags it until enough global downloads accumulate.
+          </p>
+          <p class="mt-2">
+            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed, simply click <strong>"More info"</strong> and then select <strong>"Run anyway"</strong>.
+          </p>
+        </div>
+      </div>
+
     </div>
 
   </div>
