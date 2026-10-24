@@ -83,25 +83,25 @@ function initMobileMenu() {
    -------------------------------------------------------------------------- */
 const FEATURE_DATA = {
   php: {
-    title: 'Multi-Version PHP Engine (8.1 – 8.5)',
-    subtitle: 'Zero restart hassle. Switch versions per-project or globally in 200 milliseconds.',
-    badge: '1-Click Engine',
+    title: 'Multi-Version PHP (8.1 – 8.5) & Proactive Security Monitor',
+    subtitle: 'Switch PHP versions in 200ms with 6-hour security catalog checks and SHA-256 verified 1-click updates.',
+    badge: 'New in v1.2.6 • Security Engine',
     details: [
-      'Instant toggle between PHP 8.1, 8.2, 8.3, 8.4, and 8.5.',
-      'Pre-enabled development extensions: curl, mysqli, pdo_mysql, mbstring, openssl, gd, zip, fileinfo, exif.',
-      'Auto-tuned for high limits: 128M upload max filesize, 512M memory limit, 300s execution time.',
+      'Proactive PHP Security Monitoring: Checks windows.php.net every 6 hours and flags outdated, security-only, or EOL runtimes.',
+      '1-Click Security Patches & SHA-256 Verification: Validates official PHP downloads with SHA-256 checksums before installation.',
+      'Instant toggle between PHP 8.1, 8.2, 8.3, 8.4, and recommended PHP 8.5.11 with pre-enabled extensions (curl, mysqli, pdo_mysql, mbstring, openssl, gd, zip).',
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel — PHP Runtime Check
-echo "Current PHP Version: " . PHP_VERSION . "\\n";
+// C-Script LocalHost Panel v1.2.6 — PHP Runtime & Security Check
+echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
 ?>`,
-    terminalTitle: 'c-script-runtime • php -v',
-    terminalOutput: `PHP 8.4.26 (cli) (built: Feb 2026 14:10:22) (NTS Visual C++ 2022 x64)
-Copyright (c) The PHP Group
-Zend Engine v4.4.26, with Zend OPcache v8.4.26
+    terminalTitle: 'c-script-security • php -v',
+    terminalOutput: `[PHP Security Catalog] Checked windows.php.net/downloads/releases/releases.json
+✓ PHP 8.5.11 (Active Support until 2027-12-31) — SHA-256 Checksum Verified
+⚠ PHP 8.1.34 [EOL Warning] -> 1-Click Upgrade to PHP 8.5.11 Available
 ⚡ Active Server: http://cms.test -> NGINX Reverse Proxy -> Port 8000`
   },
   laravel: {

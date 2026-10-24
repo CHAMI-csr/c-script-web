@@ -19,31 +19,37 @@
     <!-- Bento Grid Layout -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- Card 1: Multi-Version PHP (Span 2 on lg) -->
-      <div class="card-saas p-8 lg:col-span-2 flex flex-col justify-between relative overflow-hidden group">
+      <!-- Card 1: Multi-Version PHP & Security Monitor (Span 2 on lg) -->
+      <div class="card-saas p-8 lg:col-span-2 flex flex-col justify-between border-2 border-indigo-400/50 bg-gradient-to-b from-indigo-50/20 via-white to-white relative overflow-hidden group">
+        <div class="absolute top-4 right-4">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
+            <span>New in v1.2.6</span>
+          </span>
+        </div>
         <div>
           <div class="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center mb-6 shadow-sm">
             <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
             </svg>
           </div>
-          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Independent Runtimes</span>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Proactive Security &amp; Independent Runtimes</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Multi-Version PHP Engine with 1-Click Official Downloader
+            Multi-Version PHP Engine, Security Monitor &amp; SHA-256 Downloader
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Easily toggle between PHP 8.1, 8.2, 8.3, 8.4, and 8.5. Need a version not currently on your system? 
-            Download official, security-verified NTS binaries from <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">windows.php.net</code> directly in the panel.
+            Easily toggle between PHP 8.1, 8.2, 8.3, 8.4, and 8.5. C-Script checks the official <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">windows.php.net</code> release catalog every 6 hours, flags outdated, security-only, or EOL runtimes with proactive warnings, and installs 1-click security updates verified with <strong>SHA-256 checksums</strong>.
           </p>
         </div>
 
         <!-- Visual Pill Badges -->
         <div class="flex flex-wrap items-center gap-2 pt-4 border-t border-slate-100">
-          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.5 (Upcoming)</span>
-          <span class="px-2.5 py-1 rounded-md bg-indigo-600 text-white font-mono text-xs font-semibold">PHP 8.4 (Default)</span>
-          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.3 (Stable)</span>
-          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.2 (LTS)</span>
-          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.1 (Legacy)</span>
+          <span class="px-2.5 py-1 rounded-md bg-indigo-600 text-white font-mono text-xs font-semibold">PHP 8.5.11 (Latest Stable)</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.4 (Stable)</span>
+          <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-mono text-xs font-semibold">PHP 8.3 (Supported)</span>
+          <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 font-mono text-xs font-semibold">PHP 8.2 (Security-Only)</span>
+          <span class="px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 border border-rose-200 font-mono text-xs font-semibold">PHP 8.1 (EOL Alert)</span>
+          <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 font-mono text-xs font-semibold">✓ SHA-256 Verified</span>
         </div>
       </div>
 
@@ -126,12 +132,12 @@
         </div>
       </div>
 
-      <!-- Card 5: Seamless 1-Click Auto Updates & What's New Hub (New in v1.2.5) -->
+      <!-- Card 5: Seamless 1-Click Auto Updates & 6-Hour Security Checks (Updated v1.2.6) -->
       <div class="card-saas p-8 flex flex-col justify-between border-2 border-indigo-400/40 bg-gradient-to-b from-indigo-50/20 via-white to-white relative overflow-hidden group">
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
             <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span>New in v1.2.5</span>
+            <span>Updated v1.2.6</span>
           </span>
         </div>
         <div>
@@ -142,15 +148,15 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Frictionless Upgrades</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Seamless 1-Click Auto-Updates &amp; "What's New" Hub
+            6-Hour Update Checks &amp; 1-Click Background Updater
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Download and install updates in the background with one click — engineered to bypass unsigned certificate blocks cleanly while keeping your <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">%APPDATA%</code> sites and databases untouched.
+            Checks for C-Script updates every 6 hours and immediately when internet connectivity returns. Download and install updates in the background with one click while keeping your <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">%APPDATA%</code> sites and databases untouched.
           </p>
         </div>
         <div class="text-xs font-medium text-indigo-700 flex items-center gap-1.5 pt-4 border-t border-slate-100">
           <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-          <span>1-Click Background Updater • Post-Update Release Modal</span>
+          <span>6h &amp; On-Reconnect Checks • Post-Update Release Modal</span>
         </div>
       </div>
 

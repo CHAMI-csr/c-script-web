@@ -60,7 +60,7 @@
             </div>
             <div class="flex items-start gap-2 text-xs text-indigo-700 font-medium">
               <span class="text-indigo-600 font-bold shrink-0">✨</span>
-              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Seamless 1-click auto-updates, Laravel 11 <code class="font-mono text-[11px] bg-indigo-100/70 px-1 rounded">public/</code> auto-routing, auto folder site naming &amp; real-time NGINX status pill</span>
+              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Proactive PHP security monitoring, 1-click SHA-256 verified PHP 8.5 updates &amp; 6-hour auto-update checks</span>
             </div>
           </div>
         </div>
@@ -194,13 +194,14 @@
 
     </div>
 
-    <!-- What's New in v1.2.5 Release Highlights -->
+    <!-- What's New in v1.2.6 Release Highlights -->
     <div class="card-saas border border-indigo-200/80 bg-gradient-to-br from-indigo-50/40 via-white to-slate-50/60 rounded-2xl p-6 sm:p-8 max-w-6xl mx-auto mb-10 shadow-md">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200/80">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shadow-sm shrink-0">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
             </svg>
           </div>
           <div>
@@ -208,7 +209,7 @@
               <h3 class="text-lg font-extrabold text-slate-900">What's New in Version <?php echo htmlspecialchars($appConfig['version']); ?></h3>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Latest Release</span>
             </div>
-            <p class="text-xs text-slate-500 mt-0.5">Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?> • Free upgrade for all Windows users</p>
+            <p class="text-xs text-slate-500 mt-0.5">PHP Security Updates &amp; Proactive Warnings • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
           </div>
         </div>
         <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/tag/v<?php echo htmlspecialchars($appConfig['version']); ?>" target="_blank" rel="noopener noreferrer"
@@ -221,15 +222,30 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
           <div class="flex items-center gap-2.5 mb-2">
+            <span class="w-7 h-7 rounded-lg bg-rose-50 border border-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <h4 class="text-xs font-bold text-slate-900">PHP Security Monitoring</h4>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Detects outdated, security-only, unsupported, and end-of-life PHP runtimes with clear startup and Settings warnings.
+          </p>
+        </div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
+          <div class="flex items-center gap-2.5 mb-2">
             <span class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
               </svg>
             </span>
-            <h4 class="text-xs font-bold text-slate-900">Seamless 1-Click Auto Updates</h4>
+            <h4 class="text-xs font-bold text-slate-900">One-Click PHP Security Updates</h4>
           </div>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Resolved code signature verification issues for open-source releases, enabling smooth 1-click downloads and background updates.
+            Checks the official Windows PHP catalog every 6 hours and installs the latest security patch or recommended <strong>PHP 8.5</strong> upgrade.
           </p>
         </div>
 
@@ -237,42 +253,35 @@
           <div class="flex items-center gap-2.5 mb-2">
             <span class="w-7 h-7 rounded-lg bg-sky-50 border border-sky-100 text-sky-600 flex items-center justify-center shrink-0">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                <polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="20 6 9 17 4 12"/>
               </svg>
             </span>
-            <h4 class="text-xs font-bold text-slate-900">Auto Folder Name Detection</h4>
+            <h4 class="text-xs font-bold text-slate-900">Verified PHP Downloads</h4>
           </div>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Browsing or typing any project path automatically populates the Site Name from the folder, with full freedom to customize or override.
-          </p>
-        </div>
-
-        <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-7 h-7 rounded-lg bg-rose-50 border border-rose-100 text-rose-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </span>
-            <h4 class="text-xs font-bold text-slate-900">Seamless Laravel 11 Routing</h4>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Intelligent <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">public/</code> document root detection, clean <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">server.php</code> routing, and zero bare <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">use</code> statement PHP warnings.
+            Validates official PHP packages with cryptographic <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">SHA-256</code> checksums when supplied by the release catalog.
           </p>
         </div>
 
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
           <div class="flex items-center gap-2.5 mb-2">
             <span class="w-7 h-7 rounded-lg bg-purple-50 border border-purple-100 text-purple-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                <polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="12 6 12 12 16 14"/>
               </svg>
             </span>
-            <h4 class="text-xs font-bold text-slate-900">Real-Time NGINX Status &amp; Auto-Start</h4>
+            <h4 class="text-xs font-bold text-slate-900">Faster App Update Alerts</h4>
           </div>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Sidebar status indicator (<code class="font-mono text-[11px] bg-slate-100 px-1 rounded">NGINX: 80</code> / <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">NGINX: off</code>) with auto-start when launching sites and automated hosts sync.
+            Checks for new C-Script releases every 6 hours and immediately after internet connectivity returns.
           </p>
+        </div>
+      </div>
+
+      <div class="mt-5 pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
+        <div>
+          <strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.5</strong> installations receive v<?php echo htmlspecialchars($appConfig['version']); ?> automatically via the in-app updater. If updating from <strong>v1.2.4 or earlier</strong>, download and run <code class="font-mono text-[11px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">C-Script-LocalHost-Panel-Setup-<?php echo htmlspecialchars($appConfig['version']); ?>.exe</code> once (all projects and databases are preserved).
         </div>
       </div>
     </div>
