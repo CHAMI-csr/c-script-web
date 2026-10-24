@@ -104,17 +104,44 @@ Copyright (c) The PHP Group
 Zend Engine v4.4.26, with Zend OPcache v8.4.26
 ⚡ Active Server: http://cms.test -> NGINX Reverse Proxy -> Port 8000`
   },
+  laravel: {
+    title: 'Laravel 11 Auto-Routing & Smart Folder Naming',
+    subtitle: 'Zero-config public/ document root resolution, server.php routing, and auto folder-to-site naming.',
+    badge: 'New in v1.2.5',
+    details: [
+      'Smart public/ docRoot resolution: Automatically detects public/index.php and routes via server.php with zero manual setup.',
+      'Laravel 11 & Legacy Kernel ready: Native support for Laravel 11 $app->handleRequest() with zero bare use statement warnings.',
+      'Auto Folder Name Detection: Browsing or typing any project path automatically populates the Site Name and .test domain preview (with manual override).',
+      'Seamless 1-Click Auto-Updates: Background app updater bypasses unsigned code-signature blocks for smooth open-source updates.'
+    ],
+    codePreview: `<?php
+// C-Script Laravel 11 & Legacy Auto-Scaffold (public/index.php)
+define('LARAVEL_START', microtime(true));
+
+if (file_exists(__DIR__.'/../vendor/autoload.php')) {
+    require __DIR__.'/../vendor/autoload.php';
+    $app = require_once __DIR__.'/../bootstrap/app.php';
+    if (method_exists($app, 'handleRequest')) {
+        // Laravel 11 Native Handler
+        $app->handleRequest(\\Illuminate\\Http\\Request::capture());
+    }
+}`,
+    terminalTitle: 'c-script-router • laravel 11 & site manager',
+    terminalOutput: `[Add Site] 📂 Folder Selected: C:/Projects/ecommerce-api -> Auto Site Name: "ecommerce-api"
+[PHP Manager] Detected public/index.php -> Document Root: C:/Projects/ecommerce-api/public
+[Router] Attached Laravel server.php -> http://ecommerce-api.test (NGINX Port 80 Auto-Started)`
+  },
   autoindex: {
     title: 'Smart Developer Directory Indexing (Autoindex)',
     subtitle: 'No index.php? Instant modern file browser with click-to-run execution and real-time search.',
-    badge: 'New in v1.2.0',
+    badge: 'v1.2+ Core Engine',
     details: [
       'Automatic fallback: Renders a sleek directory explorer when index.php or index.html is missing in any project folder.',
-      '1-Click Script Execution: Launch standalone PHP, HTML, or JavaScript test files directly with one click.',
-      'Real-time filter: Instant client-side search box to quickly filter dozens of files and scripts.',
+      'Physical AppData Router: Provisions autoindexRouter.php directly to %APPDATA% so native PHP binaries never hit Electron asar errors.',
+      '1-Click Script Execution: Launch standalone PHP, HTML, or JavaScript test files directly with one click and live search filter.',
       'Traversal protection: Safe breadcrumb navigation with built-in path-traversal prevention safeguards.'
     ],
-    codePreview: `<!-- C-Script Smart Autoindex Engine (src/autoindexRouter.php) -->
+    codePreview: `<!-- C-Script Smart Autoindex Engine (%APPDATA%/c-script-localhost/scripts/autoindexRouter.php) -->
 Host: https://myproject.test/api/
 Path: C:/Users/Developer/Projects/myproject/api
 
@@ -130,14 +157,14 @@ Total Items: 12 files, 3 folders (Indexed in 1.4ms)
 Security: Directory traversal guard passed (Within project root)`
   },
   nginx: {
-    title: 'Standalone NGINX & Automated Wildcard SSL',
-    subtitle: 'Clean .test domains without clumsy port numbers (:8000). Full HTTPS out of the box.',
-    badge: 'Zero Port Clutter',
+    title: 'Standalone NGINX, Auto-Start & Wildcard SSL',
+    subtitle: 'Clean .test domains that auto-start NGINX on site launch with live sidebar status monitoring.',
+    badge: 'Auto-Start & Status Pill',
     details: [
-      'Automated virtual host generation: drop a folder into your projects and http://project.test is created immediately.',
-      'Built-in wildcard SSL certificates (*.test) with pre-trusted local Certificate Authority.',
-      'Zero browser security warnings on Chrome, Edge, and Firefox.',
-      'High-performance reverse proxy that routes requests dynamically to PHP and Node backends.'
+      'Auto-Start on Site Launch: Starting any local site automatically boots NGINX, syncs Windows hosts, and updates reverse proxy rules.',
+      'Real-Time Sidebar Status Pill: Monitor NGINX state (🟢 NGINX: 80 / 🟡 NGINX: off) directly from the sidebar footer on every screen.',
+      'Built-in wildcard SSL certificates (*.test) with pre-trusted local Certificate Authority and zero browser warnings.',
+      'High-performance reverse proxy that routes requests dynamically to PHP and framework backends.'
     ],
     codePreview: `# Automated C-Script NGINX Virtual Host
 server {
@@ -155,8 +182,8 @@ server {
     }
 }`,
     terminalTitle: 'nginx -t && nginx -s reload',
-    terminalOutput: `nginx: the configuration file C:/Users/.../nginx/conf/nginx.conf syntax is ok
-nginx: configuration file C:/Users/.../nginx/conf/nginx.conf test is successful
+    terminalOutput: `[Site Launch] Auto-starting NGINX Web Server & syncing Windows hosts...
+🟢 Sidebar Status Pill: NGINX: 80 (Active)
 🔒 SSL Certificate: *.test valid until 2036 (Local Root CA Trusted)
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
@@ -249,21 +276,22 @@ Format: HTML (with embedded CSS) + Plain Text fallback
 Size: 14.2 KB | Attachments: invoice_10492.pdf`
   },
   ports: {
-    title: 'Port Scanner & Process Conflict Killer',
-    subtitle: 'Never struggle with "Port 80 is already in use by IIS or Skype" again.',
+    title: 'Port Scanner, Conflict Killer & Reserved Port Guard',
+    subtitle: 'Never struggle with "Port 80 is already in use" or hijacked site ports again.',
     badge: 'Conflict Resolver',
     details: [
-      'Live scanner reveals exactly which process PID is occupying ports 80, 443, 3306, and 8000-9000.',
-      '1-Click safe termination of conflicting background services or orphaned processes.',
-      'Dedicated Windows Service permission granter for seamless local management.',
-      'Prevents port collisions before starting NGINX or MariaDB.'
+      'Live scanner reveals exactly which process PID is occupying ports 80, 443, 3306, and 8000-9999.',
+      'Strict Port Conflict Prevention: Ports assigned to stopped sites remain permanently reserved and cannot be hijacked by new sites.',
+      'Auto Next Free Port Allocation: The Add Site modal automatically suggests the next available free port with zero guesswork.',
+      'Instant Port 80 conflict alerts if IIS, Apache, or Skype occupies port 80 when launching a site.'
     ],
-    codePreview: `# Active Ports & Conflict Detection
+    codePreview: `# Active Ports & Strict Reservation Guard
 Port 80   : [OCCUPIED] PID: 4128 (World Wide Web Publishing Service) -> [Resolve]
 Port 443  : [FREE] Ready for NGINX Wildcard SSL
 Port 3306 : [OCCUPIED] PID: 7812 (C-Script MariaDB 11.4) -> [Active]
-Port 1025 : [OCCUPIED] PID: 9024 (C-Script Localhost MailCatcher) -> [Active]
-Port 8000 : [OCCUPIED] PID: 1140 (PHP 8.4 Built-in Server: cms)`,
+Port 8000 : [OCCUPIED] PID: 1140 (PHP 8.4 Built-in Server: cms)
+Port 8001 : [RESERVED] Assigned to stopped site "shop-api" (Protected)
+Port 8002 : [NEXT FREE] Auto-allocated for new site creation`,
     terminalTitle: 'c-script-ports • diagnostic',
     terminalOutput: `⚡ Port 80 conflict detected with IIS / HTTP.sys
 Action Taken: Stopped conflicting service in 0.4s

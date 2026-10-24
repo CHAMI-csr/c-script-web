@@ -63,13 +63,35 @@
 
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">
+                Laravel 11 &amp; <code class="text-xs font-mono">public/</code> Auto-Routing
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.5</span>
+              </td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Auto public/ &amp; server.php + Folder Naming</td>
+              <td class="py-4 px-6 text-rose-500">Manual httpd-vhosts.conf</td>
+              <td class="py-4 px-6 text-slate-500">Manual root change on custom folders</td>
+              <td class="py-4 px-6 text-slate-500">Manual nginx.conf container mount</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">
                 Developer Directory Indexing
-                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">New v1.2</span>
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">v1.2+</span>
               </td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Modern UI with 1-Click Run &amp; Search</td>
               <td class="py-4 px-6 text-rose-500">1990s Apache table or 403</td>
               <td class="py-4 px-6 text-slate-500">Plain listing or 403</td>
               <td class="py-4 px-6 text-slate-500">Manual container config</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">
+                1-Click Background Auto-Updates
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.5</span>
+              </td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Seamless 1-Click Updater &amp; What's New Hub</td>
+              <td class="py-4 px-6 text-rose-500">Manual reinstall &amp; data backup</td>
+              <td class="py-4 px-6 text-rose-500">Manual zip / installer replacement</td>
+              <td class="py-4 px-6 text-slate-500">Heavy engine updates &amp; restarts</td>
             </tr>
 
             <tr>

@@ -47,12 +47,12 @@
         </div>
       </div>
 
-      <!-- Card 2: NEW v1.2.0 Smart Developer Directory Indexing -->
-      <div class="card-saas p-8 flex flex-col justify-between border-2 border-emerald-400/40 bg-gradient-to-b from-emerald-50/20 via-white to-white relative overflow-hidden group">
+      <!-- Card 2: Smart Developer Directory Indexing -->
+      <div class="card-saas p-8 flex flex-col justify-between border border-emerald-300/70 bg-gradient-to-b from-emerald-50/20 via-white to-white relative overflow-hidden group">
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
-            <span>New in v1.2.0</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+            <span>v1.2+ Core</span>
           </span>
         </div>
         <div>
@@ -66,7 +66,7 @@
             Smart Directory Indexing (Autoindex)
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            No <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">index.php</code>? No 403 Forbidden! C-Script renders a lightning-fast directory explorer with 1-click execution for PHP scripts, interactive breadcrumbs, and instant real-time search.
+            No <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">index.php</code>? No 403 Forbidden! Native AppData <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">autoindexRouter.php</code> renders a fast directory explorer with 1-click PHP execution, breadcrumbs, and live search.
           </p>
         </div>
         <div class="text-xs font-medium text-emerald-700 flex items-center gap-1.5 pt-4 border-t border-slate-100">
@@ -77,25 +77,31 @@
         </div>
       </div>
 
-      <!-- Card 3: Zero Port Clutter NGINX -->
-      <div class="card-saas p-8 flex flex-col justify-between">
+      <!-- Card 3: Zero Port Clutter NGINX & Live Sidebar Status -->
+      <div class="card-saas p-8 flex flex-col justify-between border-2 border-blue-400/40 bg-gradient-to-b from-blue-50/20 via-white to-white relative overflow-hidden">
+        <div class="absolute top-4 right-4">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-800 border border-blue-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
+            <span>Updated v1.2.5</span>
+          </span>
+        </div>
         <div>
           <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-6 shadow-sm">
             <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
             </svg>
           </div>
-          <span class="text-xs font-bold tracking-wider text-blue-600 uppercase">Automated VHosts</span>
+          <span class="text-xs font-bold tracking-wider text-blue-600 uppercase">Auto-Start &amp; Live Status</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Clean .test Domains &amp; Wildcard SSL
+            Clean .test Domains, Wildcard SSL &amp; NGINX Status Pill
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Browse projects at <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">https://myproject.test</code> without typing ugly port numbers. NGINX boots automatically when your site starts, provisions reverse proxies, and binds wildcard certificates with zero browser security warnings.
+            Starting any site automatically launches NGINX, syncs your Windows <code class="text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">hosts</code> file, and binds wildcard SSL certificates. Monitor live state via the sidebar status pill (<code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-emerald-700">NGINX: 80</code>).
           </p>
         </div>
         <div class="text-xs font-medium text-emerald-600 flex items-center gap-1.5 pt-4 border-t border-slate-100">
           <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-          <span>Pre-trusted Windows Root CA Certificate</span>
+          <span>Auto-starts on site launch • Pre-trusted Root CA</span>
         </div>
       </div>
 
@@ -120,31 +126,31 @@
         </div>
       </div>
 
-      <!-- Card 5: In-App What's New Hub & Vector Iconography (New in v1.2.0) -->
+      <!-- Card 5: Seamless 1-Click Auto Updates & What's New Hub (New in v1.2.5) -->
       <div class="card-saas p-8 flex flex-col justify-between border-2 border-indigo-400/40 bg-gradient-to-b from-indigo-50/20 via-white to-white relative overflow-hidden group">
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
-            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
-            <span>New in v1.2.0</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
+            <span>New in v1.2.5</span>
           </span>
         </div>
         <div>
           <div class="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center mb-6 shadow-sm">
             <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
             </svg>
           </div>
-          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Enterprise UX</span>
+          <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">Frictionless Upgrades</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            In-App "What's New" Release Hub
+            Seamless 1-Click Auto-Updates &amp; "What's New" Hub
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Never miss new capabilities. The built-in announcement modal displays categorized release notes upon each update. Revamped with crisp vector SVG iconography across the entire application.
+            Download and install updates in the background with one click — engineered to bypass unsigned certificate blocks cleanly while keeping your <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">%APPDATA%</code> sites and databases untouched.
           </p>
         </div>
         <div class="text-xs font-medium text-indigo-700 flex items-center gap-1.5 pt-4 border-t border-slate-100">
           <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-          <span>100% Crisp Vector UI • Zero informal emojis</span>
+          <span>1-Click Background Updater • Post-Update Release Modal</span>
         </div>
       </div>
 
@@ -204,7 +210,35 @@
         </div>
       </div>
 
-      <!-- Card 8: Port Scope & Conflict Killer -->
+      <!-- Card 8: Laravel 11 Auto-Routing & Smart Folder Naming (New in v1.2.5) -->
+      <div class="card-saas p-8 flex flex-col justify-between border-2 border-emerald-400/50 bg-gradient-to-b from-emerald-50/25 via-white to-white relative overflow-hidden">
+        <div class="absolute top-4 right-4">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+            <span>New in v1.2.5</span>
+          </span>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6 shadow-sm">
+            <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="text-xs font-bold tracking-wider text-emerald-600 uppercase">Zero-Config Frameworks</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
+            Laravel 11 Auto-Routing &amp; Smart Folder Naming
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Automatically detects <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">public/</code> document roots, binds <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">server.php</code> &amp; Laravel 11 <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">handleRequest()</code>, and auto-populates your Site Name when browsing any project folder.
+          </p>
+        </div>
+        <div class="text-xs font-medium text-emerald-700 flex items-center gap-1.5 pt-4 border-t border-slate-100">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Auto folder-to-domain • Full manual override</span>
+        </div>
+      </div>
+
+      <!-- Card 9: Port Scope & Conflict Killer -->
       <div class="card-saas p-8 flex flex-col justify-between">
         <div>
           <div class="w-12 h-12 rounded-xl bg-rose-50 border border-rose-100 flex items-center justify-center mb-6 shadow-sm">
@@ -214,19 +248,19 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-rose-600 uppercase">Smart Port Scope</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Port Scope Scanner &amp; 1-Click PID Terminator
+            Port Conflict Killer &amp; Strict Port Reservation
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Filter instantly between <em>App &amp; Web Services</em> and <em>All System Ports</em>. Identify what holds port 80, 443, or 3306 (IIS, Skype, Apache, or orphaned node processes) and safely release it in one click.
+            Filter between <em>App &amp; Web Services</em> and <em>All System Ports</em> to release port 80/443/3306 in one click. Stopped site ports remain strictly reserved so new sites never collide.
           </p>
         </div>
         <div class="text-xs font-medium text-rose-700 bg-rose-50 px-3 py-1.5 rounded-lg border border-rose-100">
-          Dual-scope filtering &amp; blur protection
+          Auto next-free-port allocation &amp; Port 80 guard
         </div>
       </div>
 
-      <!-- Card 9: Command Palette (Span 2 on lg) -->
-      <div class="card-saas p-8 lg:col-span-2 flex flex-col justify-between">
+      <!-- Card 10: Command Palette -->
+      <div class="card-saas p-8 flex flex-col justify-between">
         <div>
           <div class="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-6 shadow-sm">
             <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">

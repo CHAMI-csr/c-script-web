@@ -9,14 +9,14 @@
 
       <!-- Interactive Announcement Eyebrow Pill -->
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50/90 border border-indigo-100 shadow-sm text-xs font-semibold text-indigo-700 mb-8 hover:bg-indigo-100/80 transition-colors cursor-pointer"
-           onclick="document.getElementById('video-showcase').scrollIntoView({behavior:'smooth'})">
+           onclick="document.getElementById('downloads').scrollIntoView({behavior:'smooth'})">
         <span class="flex h-2 w-2 relative">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
         </span>
-        <span>C-Script LocalHost Panel v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
+        <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">Watch 2-Min Walkthrough →</span>
+        <span class="text-indigo-600/90 font-medium">1-Click Auto-Updates, Laravel 11 Routing &amp; Auto Site Naming →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Run multi-version PHP (8.1 – 8.5), automated NGINX virtual hosts with wildcard SSL, portable MariaDB, and instant Cloudflare public sharing. 
+        Run multi-version PHP (8.1 – 8.5), automated NGINX virtual hosts with wildcard SSL, zero-config Laravel 11 <code class="text-sm font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">public/</code> routing, portable MariaDB, and instant Cloudflare public sharing. 
         <strong class="text-slate-800 font-semibold">100% offline, zero UAC elevation loops.</strong>
       </p>
 
