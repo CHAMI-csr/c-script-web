@@ -58,7 +58,7 @@
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
           <h3 class="text-base font-bold text-slate-900">
-            Can I run multiple PHP projects on different PHP versions simultaneously?
+            How does C-Script keep my PHP runtimes secure and up to date?
           </h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">
             ↓
@@ -66,7 +66,10 @@
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
           <p>
-            <strong>Yes.</strong> You can assign a specific PHP version (e.g. PHP 8.1 for a legacy Symfony project and PHP 8.4 for a fresh Laravel 11 app) per site. The NGINX reverse proxy dynamically routes incoming requests on <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">*.test</code> domains to the respective PHP worker port without collisions.
+            Starting in <strong>v1.2.6</strong>, C-Script checks the official Windows PHP release catalog every 6 hours and flags outdated, security-only, end-of-life (EOL), or unsupported PHP versions with clear startup and Settings warnings.
+          </p>
+          <p class="mt-2">
+            You can install the latest PHP security patch or upgrade to <strong>PHP 8.5</strong> in one click, and every downloaded PHP package is verified with its official <strong>SHA-256 checksum</strong> before installation. You can also run multiple PHP versions (8.1 – 8.5) simultaneously across different <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">*.test</code> sites.
           </p>
         </div>
       </div>
@@ -157,7 +160,7 @@
             This is standard Windows behavior for newly compiled open-source binaries that don't yet have high cloud download reputation. Because C-Script interacts with developer system networking (binding ports 80/443 and updating the local <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">hosts</code> file for test domains), SmartScreen flags it until enough global downloads accumulate.
           </p>
           <p class="mt-2">
-            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed during initial install, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>. Starting in <strong>v1.2.5</strong>, in-app 1-click updates automatically bypass unsigned code-signature checks so all future upgrades install seamlessly in the background.
+            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed during initial install, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>. From <strong>v1.2.5+</strong> (and with 6-hour checks in <strong>v1.2.6</strong>), in-app 1-click updates automatically bypass unsigned code-signature checks so all future upgrades install seamlessly in the background. (If you are on v1.2.4, run the v1.2.6 Setup installer once over your existing installation.)
           </p>
         </div>
       </div>

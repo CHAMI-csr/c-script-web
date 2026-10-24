@@ -47,10 +47,21 @@
 
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">Multi-PHP Version Switcher</td>
-              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">1-Click Instant (8.1 – 8.5)</td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">1-Click Instant (8.1 – 8.5.11)</td>
               <td class="py-4 px-6 text-rose-500">Manual zip extraction</td>
               <td class="py-4 px-6 text-slate-500">Requires App Restart</td>
               <td class="py-4 px-6 text-slate-500">Rebuild Dockerfile</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">
+                PHP Security Monitoring &amp; SHA-256
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.6</span>
+              </td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">6h Catalog Sync, EOL Alerts &amp; SHA-256</td>
+              <td class="py-4 px-6 text-rose-500">None (Silent outdated PHP)</td>
+              <td class="py-4 px-6 text-rose-500">None (Manual zip replacement)</td>
+              <td class="py-4 px-6 text-slate-500">Manual image tag pulls</td>
             </tr>
 
             <tr>
@@ -64,7 +75,7 @@
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">
                 Laravel 11 &amp; <code class="text-xs font-mono">public/</code> Auto-Routing
-                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.5</span>
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">v1.2.5+</span>
               </td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Auto public/ &amp; server.php + Folder Naming</td>
               <td class="py-4 px-6 text-rose-500">Manual httpd-vhosts.conf</td>
@@ -86,9 +97,9 @@
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">
                 1-Click Background Auto-Updates
-                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.5</span>
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">Updated v1.2.6</span>
               </td>
-              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Seamless 1-Click Updater &amp; What's New Hub</td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">6h &amp; Reconnect Checks + 1-Click Updater</td>
               <td class="py-4 px-6 text-rose-500">Manual reinstall &amp; data backup</td>
               <td class="py-4 px-6 text-rose-500">Manual zip / installer replacement</td>
               <td class="py-4 px-6 text-slate-500">Heavy engine updates &amp; restarts</td>

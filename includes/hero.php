@@ -16,7 +16,7 @@
         </span>
         <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">1-Click Auto-Updates, Laravel 11 Routing &amp; Auto Site Naming →</span>
+        <span class="text-indigo-600/90 font-medium">PHP Security Monitoring, SHA-256 Verified Updates &amp; PHP 8.5 →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Run multi-version PHP (8.1 – 8.5), automated NGINX virtual hosts with wildcard SSL, zero-config Laravel 11 <code class="text-sm font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">public/</code> routing, portable MariaDB, and instant Cloudflare public sharing. 
+        Run multi-version PHP (8.1 – 8.5) with proactive security monitoring and SHA-256 verified updates, automated NGINX virtual hosts with wildcard SSL, zero-config Laravel 11 <code class="text-sm font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">public/</code> routing, portable MariaDB, and instant Cloudflare sharing. 
         <strong class="text-slate-800 font-semibold">100% offline, zero UAC elevation loops.</strong>
       </p>
 

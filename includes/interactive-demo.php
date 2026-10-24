@@ -17,8 +17,9 @@
 
     <!-- Segmented Tab Navigation Bar (HitPay Pill Style) -->
     <div class="flex items-center justify-start lg:justify-center gap-2 overflow-x-auto pb-4 mb-10 scrollbar-none">
-      <button class="tab-pill active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shrink-0 cursor-pointer" data-feature="php">
-        🐘 Multi-Version PHP
+      <button class="tab-pill active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shrink-0 cursor-pointer flex items-center gap-1.5" data-feature="php">
+        <span>🐘 PHP 8.5 &amp; Security Monitor</span>
+        <span class="text-[10px] font-bold bg-indigo-500 text-white px-1.5 py-0.2 rounded-full">v1.2.6</span>
       </button>
       <button class="tab-pill px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 shrink-0 cursor-pointer flex items-center gap-1.5" data-feature="laravel">
         <span>⚡ Laravel 11 &amp; Auto-Site</span>
@@ -53,29 +54,29 @@
         <div class="lg:col-span-5 flex flex-col justify-between">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-50 border border-indigo-100 text-xs font-bold text-indigo-700 mb-4" id="feature-tab-badge">
-              1-Click Engine
+              New in v1.2.6 • Security Engine
             </div>
             
             <h3 class="text-2xl font-bold text-slate-900 tracking-tight mb-2" id="feature-tab-title">
-              Multi-Version PHP Engine (8.1 – 8.5)
+              Multi-Version PHP (8.1 – 8.5) &amp; Proactive Security Monitor
             </h3>
             
             <p class="text-sm text-slate-600 leading-relaxed mb-6" id="feature-tab-subtitle">
-              Zero restart hassle. Switch versions per-project or globally in 200 milliseconds.
+              Switch PHP versions in 200ms with 6-hour security catalog checks and SHA-256 verified 1-click updates.
             </p>
 
             <ul class="space-y-3 mb-8" id="feature-tab-list">
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
-                <span class="text-slate-600 text-sm leading-relaxed">Instant toggle between PHP 8.1, 8.2, 8.3, 8.4, and 8.5.</span>
+                <span class="text-slate-600 text-sm leading-relaxed">Proactive PHP Security Monitoring: Checks windows.php.net every 6 hours and flags outdated, security-only, or EOL runtimes.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
-                <span class="text-slate-600 text-sm leading-relaxed">Pre-enabled development extensions: curl, mysqli, pdo_mysql, mbstring, openssl, gd, zip, fileinfo, exif.</span>
+                <span class="text-slate-600 text-sm leading-relaxed">1-Click Security Patches &amp; SHA-256 Verification: Validates official PHP downloads with SHA-256 checksums before installation.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
-                <span class="text-slate-600 text-sm leading-relaxed">Auto-tuned for high limits: 128M upload max filesize, 512M memory limit, 300s execution time.</span>
+                <span class="text-slate-600 text-sm leading-relaxed">Instant toggle between PHP 8.1, 8.2, 8.3, 8.4, and recommended PHP 8.5.11 with pre-enabled extensions (curl, mysqli, pdo_mysql, mbstring, openssl, gd, zip).</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
@@ -107,12 +108,12 @@
                 </div>
                 <span class="text-xs font-mono text-slate-400 pl-2">preview.php</span>
               </div>
-              <span class="text-[11px] font-mono text-indigo-400 font-semibold">PHP 8.4 NTS x64</span>
+              <span class="text-[11px] font-mono text-indigo-400 font-semibold">PHP 8.5.11 NTS x64 (SHA-256 Verified)</span>
             </div>
 
             <div class="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-slate-300 leading-relaxed overflow-x-auto whitespace-pre selection:bg-indigo-600 selection:text-white" id="feature-tab-code">&lt;?php
-// C-Script LocalHost Panel — PHP Runtime Check
-echo "Current PHP Version: " . PHP_VERSION . "\n";
+// C-Script LocalHost Panel v1.2.6 — PHP Runtime &amp; Security Check
+echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
 ?&gt;</div>
@@ -123,14 +124,14 @@ echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbst
             <div class="bg-slate-950 px-4 py-2 border-b border-slate-800/80 flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="text-emerald-400 font-mono text-xs">●</span>
-                <span class="text-xs font-mono text-slate-400" id="feature-tab-term-title">c-script-runtime • php -v</span>
+                <span class="text-xs font-mono text-slate-400" id="feature-tab-term-title">c-script-security • php -v</span>
               </div>
               <span class="text-[10px] font-mono text-slate-500">Live Diagnostic</span>
             </div>
 
-            <div class="p-4 font-mono text-xs text-emerald-400 bg-black/60 leading-relaxed overflow-x-auto whitespace-pre" id="feature-tab-term-output">PHP 8.4.26 (cli) (built: Feb 2026 14:10:22) (NTS Visual C++ 2022 x64)
-Copyright (c) The PHP Group
-Zend Engine v4.4.26, with Zend OPcache v8.4.26
+            <div class="p-4 font-mono text-xs text-emerald-400 bg-black/60 leading-relaxed overflow-x-auto whitespace-pre" id="feature-tab-term-output">[PHP Security Catalog] Checked windows.php.net/downloads/releases/releases.json
+✓ PHP 8.5.11 (Active Support until 2027-12-31) — SHA-256 Checksum Verified
+⚠ PHP 8.1.34 [EOL Warning] -> 1-Click Upgrade to PHP 8.5.11 Available
 ⚡ Active Server: http://cms.test -> NGINX Reverse Proxy -> Port 8000</div>
           </div>
 
