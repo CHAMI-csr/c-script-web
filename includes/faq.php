@@ -71,11 +71,11 @@
         </div>
       </div>
 
-      <!-- Question 4: Smart Directory Indexing -->
+      <!-- Question 4: Smart Directory Indexing & Laravel public/ Routing -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
           <h3 class="text-base font-bold text-slate-900">
-            What happens if my project folder doesn't have an index.php file?
+            What happens if my project uses a Laravel <code class="font-mono text-sm bg-slate-100 px-1.5 py-0.5 rounded">public/</code> folder or doesn't have an <code class="font-mono text-sm bg-slate-100 px-1.5 py-0.5 rounded">index.php</code> file?
           </h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">
             ↓
@@ -83,7 +83,10 @@
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
           <p>
-            In v1.2.0, you'll never encounter a 403 Forbidden error or blank page! C-Script includes built-in <strong>Smart Developer Directory Indexing (Autoindex)</strong>. When <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.php</code> or <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.html</code> is missing, C-Script provides an instant, modern file explorer with path breadcrumbs, live search filtering, and 1-click execution for standalone PHP, HTML, and JS scripts.
+            C-Script handles both automatically! If your project contains <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">public/index.php</code> (such as Laravel 10/11), C-Script automatically resolves <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">public/</code> as the document root and attaches <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">server.php</code> routing with zero manual configuration.
+          </p>
+          <p class="mt-2">
+            If both <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.php</code> and <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">index.html</code> are missing, C-Script activates <strong>Smart Developer Directory Indexing (Autoindex)</strong> — rendering a modern file explorer with path breadcrumbs, live search filtering, and 1-click execution for standalone PHP, HTML, and JS scripts.
           </p>
         </div>
       </div>
@@ -154,7 +157,7 @@
             This is standard Windows behavior for newly compiled open-source binaries that don't yet have high cloud download reputation. Because C-Script interacts with developer system networking (binding ports 80/443 and updating the local <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">hosts</code> file for test domains), SmartScreen flags it until enough global downloads accumulate.
           </p>
           <p class="mt-2">
-            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed, simply click <strong>"More info"</strong> and then select <strong>"Run anyway"</strong>.
+            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed during initial install, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>. Starting in <strong>v1.2.5</strong>, in-app 1-click updates automatically bypass unsigned code-signature checks so all future upgrades install seamlessly in the background.
           </p>
         </div>
       </div>

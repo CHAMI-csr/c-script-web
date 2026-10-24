@@ -163,7 +163,7 @@
         <div class="bg-slate-950 px-4 py-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-400">
           <div class="flex items-center gap-4">
             <span class="flex items-center gap-1.5 text-emerald-400">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> NGINX: Active (Port 80/443)
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> NGINX: 80 (Auto-Started)
             </span>
             <span class="flex items-center gap-1.5 text-blue-400">
               <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> MySQL: 127.0.0.1:3306
@@ -186,24 +186,24 @@
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm flex items-start gap-3">
           <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">1</div>
           <div>
-            <h4 class="text-xs font-bold text-slate-900">Zero Port Configuration</h4>
-            <p class="text-[12px] text-slate-500 mt-0.5">Automated vhosts for clean <code class="font-mono text-slate-700">http://sitename.test</code> domains.</p>
+            <h4 class="text-xs font-bold text-slate-900">Auto-Start NGINX &amp; Status Pill</h4>
+            <p class="text-[12px] text-slate-500 mt-0.5">Launches NGINX &amp; syncs hosts on site start for instant <code class="font-mono text-slate-700">http://sitename.test</code> access.</p>
           </div>
         </div>
 
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm flex items-start gap-3">
           <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">2</div>
           <div>
-            <h4 class="text-xs font-bold text-slate-900">1-Click Multi-PHP Switch</h4>
-            <p class="text-[12px] text-slate-500 mt-0.5">Switch between PHP 8.1, 8.2, 8.3, 8.4, and 8.5 with no reboot.</p>
+            <h4 class="text-xs font-bold text-slate-900">Laravel 11 &amp; Multi-PHP Switch</h4>
+            <p class="text-[12px] text-slate-500 mt-0.5">Auto-detects <code class="font-mono text-slate-700">public/</code> &amp; <code class="font-mono text-slate-700">server.php</code> with 1-click PHP 8.1–8.5 switching.</p>
           </div>
         </div>
 
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm flex items-start gap-3">
           <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-sm shrink-0">3</div>
           <div>
-            <h4 class="text-xs font-bold text-slate-900">Cloudflare Web Sharing</h4>
-            <p class="text-[12px] text-slate-500 mt-0.5">Share live local sites via secure HTTPS URL in under 3 seconds.</p>
+            <h4 class="text-xs font-bold text-slate-900">1-Click Updates &amp; Web Sharing</h4>
+            <p class="text-[12px] text-slate-500 mt-0.5">Seamless background app updates and Cloudflare HTTPS sharing in under 3 seconds.</p>
           </div>
         </div>
 

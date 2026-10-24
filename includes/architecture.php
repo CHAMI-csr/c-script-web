@@ -77,6 +77,7 @@
             <div class="pl-8 text-slate-300">├── <span class="text-white">data\</span> <span class="text-slate-500">(Protected Databases &amp; InnoDB)</span></div>
             <div class="pl-8 text-slate-300">└── <span class="text-white">bin\mysqld.exe</span> <span class="text-slate-500">(Port 3306)</span></div>
             <div class="pl-4 text-slate-400">├── <span class="text-purple-400 font-bold">ssl\</span> <span class="text-slate-500">(*.test Wildcard Certificates)</span></div>
+            <div class="pl-4 text-slate-400">├── <span class="text-teal-400 font-bold">scripts\</span> <span class="text-slate-500">(autoindexRouter.php Native Directory Engine)</span></div>
             <div class="pl-4 text-slate-400">└── <span class="text-rose-400 font-bold">bin\</span> <span class="text-slate-500">(Cloudflare Quick Tunnel Client)</span></div>
           </div>
 
