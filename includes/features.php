@@ -24,7 +24,7 @@
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
             <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span>New in v1.2.6</span>
+            <span>PHP security tools since v1.2.6</span>
           </span>
         </div>
         <div>
@@ -132,12 +132,12 @@
         </div>
       </div>
 
-      <!-- Card 5: Seamless 1-Click Auto Updates & 6-Hour Security Checks (Updated v1.2.6) -->
+      <!-- Card 5: Seamless 1-Click Auto Updates & 6-Hour Security Checks (Updated v1.2.7) -->
       <div class="card-saas p-8 flex flex-col justify-between border-2 border-indigo-400/40 bg-gradient-to-b from-indigo-50/20 via-white to-white relative overflow-hidden group">
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">
             <span class="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span>Updated v1.2.6</span>
+            <span>Updated v1.2.7</span>
           </span>
         </div>
         <div>
@@ -170,11 +170,11 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            MariaDB 11.4 LTS Studio + Visual ER Diagram Visualizer
+            MariaDB Studio, phpMyAdmin &amp; Visual ER Diagrams
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Inspect tables, run raw queries, render interactive Entity-Relationship (ER) diagrams with foreign key links, and export schemas directly to Laravel 11 migration files.
+            Use the built-in SQL editor, launch phpMyAdmin, inspect tables, run queries, render interactive Entity-Relationship (ER) diagrams, and export schemas directly to Laravel migration files.
           </p>
         </div>
 
@@ -204,11 +204,10 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-purple-600 uppercase">Safe Testing</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Local SMTP Mail Catcher (Port 1025)
+            Mailpit-Compatible Local Inbox (Port 1025)
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Catches all outgoing email dispatched from PHP <code class="text-xs bg-slate-100 px-1 rounded">mail()</code> and SMTP. 
-            Inspect HTML previews, plain text, headers, and attachments inside the panel without sending spam to real email accounts.
+            Captures SMTP mail in the embedded inbox with multipart message handling, HTML previews, plain text, headers, and attachments—without a separate Mailpit or Docker service.
           </p>
         </div>
         <div class="text-xs font-medium text-purple-700 bg-purple-50 px-3 py-1.5 rounded-lg border border-purple-100">
@@ -216,12 +215,12 @@
         </div>
       </div>
 
-      <!-- Card 8: Laravel 11 Auto-Routing & Smart Folder Naming (New in v1.2.5) -->
+      <!-- Card 8: Laravel Workflows (Expanded in v1.2.7) -->
       <div class="card-saas p-8 flex flex-col justify-between border-2 border-emerald-400/50 bg-gradient-to-b from-emerald-50/25 via-white to-white relative overflow-hidden">
         <div class="absolute top-4 right-4">
           <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
-            <span>New in v1.2.5</span>
+            <span>Expanded in v1.2.7</span>
           </span>
         </div>
         <div>
@@ -232,15 +231,15 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-emerald-600 uppercase">Zero-Config Frameworks</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Laravel 11 Auto-Routing &amp; Smart Folder Naming
+            Laravel Project Setup, Artisan &amp; Vite/HMR
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Automatically detects <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">public/</code> document roots, binds <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">server.php</code> &amp; Laravel 11 <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">handleRequest()</code>, and auto-populates your Site Name when browsing any project folder.
+            Create Laravel projects or install Composer dependencies from Add Site, then run common Artisan tasks in the panel. Automatic <code class="text-xs bg-slate-100 px-1 py-0.5 rounded text-slate-800">public/</code> routing and Vite/HMR proxying keep local workflows connected to your .test domain.
           </p>
         </div>
         <div class="text-xs font-medium text-emerald-700 flex items-center gap-1.5 pt-4 border-t border-slate-100">
           <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-          <span>Auto folder-to-domain • Full manual override</span>
+          <span>Composer setup • Artisan commands • Vite/HMR proxy</span>
         </div>
       </div>
 
@@ -284,6 +283,20 @@
         <div class="flex items-center gap-3 text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">
           <span>Themes: Dark, Dracula, Nord, Monokai</span>
         </div>
+      </div>
+
+      <!-- Card 11: Local Development Operations (New in v1.2.7) -->
+      <div class="card-saas p-8 flex flex-col justify-between border-2 border-violet-400/40 bg-gradient-to-b from-violet-50/20 via-white to-white relative overflow-hidden">
+        <div class="absolute top-4 right-4">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-violet-100 text-violet-800 border border-violet-200">New in v1.2.7</span>
+        </div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-violet-50 border border-violet-100 flex items-center justify-center mb-6 shadow-sm text-violet-600 text-xl">⚙</div>
+          <span class="text-xs font-bold tracking-wider text-violet-600 uppercase">Developer Operations</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Live Logs, Tray Controls &amp; Local Networking</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">Tail service and PHP logs live, control services and sites from the system tray, fix Windows proxy bypass for local domains, create trusted HTTPS certificates, and choose per-site NGINX FastCGI or public tunnel options.</p>
+        </div>
+        <div class="text-xs font-medium text-violet-700 bg-violet-50 px-3 py-1.5 rounded-lg border border-violet-100">Live diagnostics • Trusted local HTTPS • FastCGI</div>
       </div>
 
     </div>

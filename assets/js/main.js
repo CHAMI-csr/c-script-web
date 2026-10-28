@@ -85,7 +85,7 @@ const FEATURE_DATA = {
   php: {
     title: 'Multi-Version PHP (8.1 – 8.5) & Proactive Security Monitor',
     subtitle: 'Switch PHP versions in 200ms with 6-hour security catalog checks and SHA-256 verified 1-click updates.',
-    badge: 'New in v1.2.6 • Security Engine',
+    badge: 'PHP security engine • v1.2.6+',
     details: [
       'Proactive PHP Security Monitoring: Checks windows.php.net every 6 hours and flags outdated, security-only, or EOL runtimes.',
       '1-Click Security Patches & SHA-256 Verification: Validates official PHP downloads with SHA-256 checksums before installation.',
@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.6 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.7 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -105,17 +105,17 @@ echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbst
 ⚡ Active Server: http://cms.test -> NGINX Reverse Proxy -> Port 8000`
   },
   laravel: {
-    title: 'Laravel 11 Auto-Routing & Smart Folder Naming',
-    subtitle: 'Zero-config public/ document root resolution, server.php routing, and auto folder-to-site naming.',
-    badge: 'New in v1.2.5',
+    title: 'Laravel Project Workflows, Artisan & Vite/HMR',
+    subtitle: 'Create projects, install dependencies, run Artisan tasks, and keep Vite development assets working through local domains.',
+    badge: 'Expanded in v1.2.7',
     details: [
-      'Smart public/ docRoot resolution: Automatically detects public/index.php and routes via server.php with zero manual setup.',
-      'Laravel 11 & Legacy Kernel ready: Native support for Laravel 11 $app->handleRequest() with zero bare use statement warnings.',
-      'Auto Folder Name Detection: Browsing or typing any project path automatically populates the Site Name and .test domain preview (with manual override).',
-      'Seamless 1-Click Auto-Updates: Background app updater bypasses unsigned code-signature blocks for smooth open-source updates.'
+      'Create a Laravel project in an empty folder or install Composer dependencies for an existing project from Add Site.',
+      'Run common Artisan tasks such as migrations, database seeding, and cache clearing with streamed output in the panel.',
+      'Automatic Laravel Vite/HMR proxying routes development assets and the HMR WebSocket through the local .test domain.',
+      'Laravel public/ document-root detection and server.php routing continue to work without manual configuration.'
     ],
     codePreview: `<?php
-// C-Script Laravel 11 & Legacy Auto-Scaffold (public/index.php)
+// C-Script v1.2.7 — Laravel development workflow
 define('LARAVEL_START', microtime(true));
 
 if (file_exists(__DIR__.'/../vendor/autoload.php')) {
@@ -126,10 +126,10 @@ if (file_exists(__DIR__.'/../vendor/autoload.php')) {
         $app->handleRequest(\\Illuminate\\Http\\Request::capture());
     }
 }`,
-    terminalTitle: 'c-script-router • laravel 11 & site manager',
-    terminalOutput: `[Add Site] 📂 Folder Selected: C:/Projects/ecommerce-api -> Auto Site Name: "ecommerce-api"
-[PHP Manager] Detected public/index.php -> Document Root: C:/Projects/ecommerce-api/public
-[Router] Attached Laravel server.php -> http://ecommerce-api.test (NGINX Port 80 Auto-Started)`
+    terminalTitle: 'c-script-laravel • artisan & vite/hmr',
+    terminalOutput: `[Add Site] Laravel project created and Composer dependencies verified
+[Artisan] migrate -- Streamed output received (exit code 0)
+[Vite] HMR detected on port 5173 -> proxied through https://ecommerce-api.test`
   },
   autoindex: {
     title: 'Smart Developer Directory Indexing (Autoindex)',

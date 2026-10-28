@@ -12,7 +12,7 @@
         See C-Script LocalHost Panel in Action.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Watch how effortlessly you can launch local projects, toggle PHP engines, visualize MySQL schemas, and share live client previews with a single click.
+        Watch how effortlessly you can launch local projects, use the new Laravel and database workflows, inspect live service logs, toggle PHP engines, and share client previews.
       </p>
     </div>
 
@@ -169,7 +169,7 @@
               <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> MySQL: 127.0.0.1:3306
             </span>
             <span class="flex items-center gap-1.5 text-purple-400">
-              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> MailCatcher: Port 1025
+              <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Mailpit Inbox: Port 1025
             </span>
           </div>
 

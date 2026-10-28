@@ -66,11 +66,23 @@
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
           <p>
-            Starting in <strong>v1.2.6</strong>, C-Script checks the official Windows PHP release catalog every 6 hours and flags outdated, security-only, end-of-life (EOL), or unsupported PHP versions with clear startup and Settings warnings.
+            Since <strong>v1.2.6</strong>, C-Script checks the official Windows PHP release catalog every 6 hours and flags outdated, security-only, end-of-life (EOL), or unsupported PHP versions with clear startup and Settings warnings.
           </p>
           <p class="mt-2">
             You can install the latest PHP security patch or upgrade to <strong>PHP 8.5</strong> in one click, and every downloaded PHP package is verified with its official <strong>SHA-256 checksum</strong> before installation. You can also run multiple PHP versions (8.1 – 8.5) simultaneously across different <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">*.test</code> sites.
           </p>
+        </div>
+      </div>
+
+      <!-- Question 4: What's new in v1.2.7 -->
+      <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
+        <div class="faq-trigger flex items-center justify-between gap-4">
+          <h3 class="text-base font-bold text-slate-900">What new development tools are included in v1.2.7?</h3>
+          <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
+        </div>
+        <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
+          <p>Version 1.2.7 expands Laravel workflows with Composer project setup, dependency installation, common Artisan tasks, and Vite/HMR proxying through local domains. It also adds phpMyAdmin integration, improved SQL editing, live service logs, tray controls, local proxy bypass tools, trusted HTTPS certificate setup, per-site NGINX FastCGI, and expanded tunnel options.</p>
+          <p class="mt-2">Optional tools such as mkcert and ngrok may need to be installed separately. New users can choose the Setup installer or portable executable from the official GitHub release page.</p>
         </div>
       </div>
 
@@ -160,7 +172,7 @@
             This is standard Windows behavior for newly compiled open-source binaries that don't yet have high cloud download reputation. Because C-Script interacts with developer system networking (binding ports 80/443 and updating the local <code class="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">hosts</code> file for test domains), SmartScreen flags it until enough global downloads accumulate.
           </p>
           <p class="mt-2">
-            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed during initial install, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>. From <strong>v1.2.5+</strong> (and with 6-hour checks in <strong>v1.2.6</strong>), in-app 1-click updates automatically bypass unsigned code-signature checks so all future upgrades install seamlessly in the background. (If you are on v1.2.4, run the v1.2.6 Setup installer once over your existing installation.)
+            The installer is <strong>100% clean, safe, and open-source</strong>. To proceed during initial install, simply click <strong>"More info"</strong> and select <strong>"Run anyway"</strong>. From <strong>v1.2.5+</strong> (and with 6-hour checks in <strong>v1.2.6</strong>), in-app 1-click updates automatically bypass unsigned code-signature checks so all future upgrades install seamlessly in the background. (If you are on v1.2.4 or earlier, run the latest Setup installer once over your existing installation.)
           </p>
         </div>
       </div>
