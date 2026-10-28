@@ -56,7 +56,7 @@
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">
                 PHP Security Monitoring &amp; SHA-256
-                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">New v1.2.6</span>
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">Since v1.2.6</span>
               </td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">6h Catalog Sync, EOL Alerts &amp; SHA-256</td>
               <td class="py-4 px-6 text-rose-500">None (Silent outdated PHP)</td>
@@ -97,12 +97,28 @@
             <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">
                 1-Click Background Auto-Updates
-                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">Updated v1.2.6</span>
+                <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-100 text-indigo-800">Updated v1.2.7</span>
               </td>
-              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">6h &amp; Reconnect Checks + 1-Click Updater</td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">6h &amp; Reconnect Checks + Reliable 1-Click Updater</td>
               <td class="py-4 px-6 text-rose-500">Manual reinstall &amp; data backup</td>
               <td class="py-4 px-6 text-rose-500">Manual zip / installer replacement</td>
               <td class="py-4 px-6 text-slate-500">Heavy engine updates &amp; restarts</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Laravel Workflows &amp; Vite/HMR <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.7</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Composer Setup, Artisan &amp; Local HMR Proxy</td>
+              <td class="py-4 px-6 text-slate-500">Manual Composer and proxy setup</td>
+              <td class="py-4 px-6 text-slate-500">Manual project and HMR configuration</td>
+              <td class="py-4 px-6 text-slate-500">Manual service wiring</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Integrated phpMyAdmin &amp; SQL Tools <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.7</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Integrated phpMyAdmin + SQL Editor</td>
+              <td class="py-4 px-6 text-slate-500">Separate installation</td>
+              <td class="py-4 px-6 text-slate-500">External database tools</td>
+              <td class="py-4 px-6 text-slate-500">Separate container / client</td>
             </tr>
 
             <tr>

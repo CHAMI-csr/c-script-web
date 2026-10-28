@@ -22,8 +22,8 @@
         <span class="text-[10px] font-bold bg-indigo-500 text-white px-1.5 py-0.2 rounded-full">v1.2.6</span>
       </button>
       <button class="tab-pill px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 shrink-0 cursor-pointer flex items-center gap-1.5" data-feature="laravel">
-        <span>⚡ Laravel 11 &amp; Auto-Site</span>
-        <span class="text-[10px] font-bold bg-indigo-100 text-indigo-800 px-1.5 py-0.2 rounded-full">v1.2.5</span>
+        <span>⚡ Laravel Tools &amp; Vite/HMR</span>
+        <span class="text-[10px] font-bold bg-indigo-100 text-indigo-800 px-1.5 py-0.2 rounded-full">v1.2.7</span>
       </button>
       <button class="tab-pill px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 shrink-0 cursor-pointer flex items-center gap-1.5" data-feature="autoindex">
         <span>📂 Smart Autoindex</span>
@@ -54,7 +54,7 @@
         <div class="lg:col-span-5 flex flex-col justify-between">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-50 border border-indigo-100 text-xs font-bold text-indigo-700 mb-4" id="feature-tab-badge">
-              New in v1.2.6 • Security Engine
+              PHP security engine • v1.2.6+
             </div>
             
             <h3 class="text-2xl font-bold text-slate-900 tracking-tight mb-2" id="feature-tab-title">
@@ -112,7 +112,7 @@
             </div>
 
             <div class="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-slate-300 leading-relaxed overflow-x-auto whitespace-pre selection:bg-indigo-600 selection:text-white" id="feature-tab-code">&lt;?php
-// C-Script LocalHost Panel v1.2.6 — PHP Runtime &amp; Security Check
+// C-Script LocalHost Panel v1.2.7 — PHP Runtime &amp; Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);

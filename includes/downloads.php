@@ -56,32 +56,32 @@
               <span class="text-emerald-500 font-bold">✓</span> Zero UAC elevation required
             </div>
             <div class="flex items-center gap-2 text-xs text-slate-700">
-              <span class="text-emerald-500 font-bold">✓</span> Pre-bundled offline runtime (~184 MB)
+              <span class="text-emerald-500 font-bold">✓</span> Bundled Windows application • Setup download ~123 MB
             </div>
             <div class="flex items-start gap-2 text-xs text-indigo-700 font-medium">
               <span class="text-indigo-600 font-bold shrink-0">✨</span>
-              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Proactive PHP security monitoring, 1-click SHA-256 verified PHP 8.5 updates &amp; 6-hour auto-update checks</span>
+              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: Laravel project tools, Artisan and Vite/HMR workflows, phpMyAdmin integration, live logs &amp; tray controls</span>
             </div>
           </div>
         </div>
 
         <div>
           <!-- Direct Download CTA -->
-          <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script-LocalHost-Panel-Setup-<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
+          <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script.LocalHost.Panel.Setup.<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
              class="btn-primary-modern flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl text-xs font-bold text-center shadow-lg hover:shadow-xl mb-3 transition-all"
-             onclick="showToast('Starting download of C-Script LocalHost Panel Setup <?php echo htmlspecialchars($appConfig['version']); ?>.exe...', 'success')">
+             onclick="showToast('Starting download of C-Script.LocalHost.Panel.Setup.<?php echo htmlspecialchars($appConfig['version']); ?>.exe...', 'success')">
             <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
             </svg>
-            <span>Download Setup (.exe) — 184 MB</span>
+            <span>Download Setup (.exe) — ~123 MB</span>
           </a>
 
           <!-- Portable Download Link -->
           <div class="text-center">
-            <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script-LocalHost-Panel-<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
+            <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/download/v<?php echo htmlspecialchars($appConfig['version']); ?>/C-Script.LocalHost.Panel.<?php echo htmlspecialchars($appConfig['version']); ?>.exe"
                class="text-[11px] font-semibold text-indigo-600 hover:text-indigo-800 transition-colors"
-               onclick="showToast('Starting download of C-Script Portable Executable v<?php echo htmlspecialchars($appConfig['version']); ?>...', 'success')">
-              Or download Portable Standalone (.exe) →
+               onclick="showToast('Starting download of C-Script.LocalHost.Panel.<?php echo htmlspecialchars($appConfig['version']); ?>.exe...', 'success')">
+              Or download Portable Standalone (~111 MB) →
             </a>
           </div>
         </div>
@@ -194,7 +194,7 @@
 
     </div>
 
-    <!-- What's New in v1.2.6 Release Highlights -->
+    <!-- What's New in v1.2.7 Release Highlights -->
     <div class="card-saas border border-indigo-200/80 bg-gradient-to-br from-indigo-50/40 via-white to-slate-50/60 rounded-2xl p-6 sm:p-8 max-w-6xl mx-auto mb-10 shadow-md">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200/80">
         <div class="flex items-center gap-3">
@@ -209,80 +209,44 @@
               <h3 class="text-lg font-extrabold text-slate-900">What's New in Version <?php echo htmlspecialchars($appConfig['version']); ?></h3>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Latest Release</span>
             </div>
-            <p class="text-xs text-slate-500 mt-0.5">PHP Security Updates &amp; Proactive Warnings • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
+            <p class="text-xs text-slate-500 mt-0.5">Expanded Local Development Tools • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
           </div>
         </div>
         <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/tag/v<?php echo htmlspecialchars($appConfig['version']); ?>" target="_blank" rel="noopener noreferrer"
            class="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors inline-flex items-center gap-1 shrink-0">
-          <span>View Full Release Notes on GitHub</span>
-          <span>→</span>
+          <span>View Full Release Notes on GitHub</span><span>→</span>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-7 h-7 rounded-lg bg-rose-50 border border-rose-100 text-rose-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
-              </svg>
-            </span>
-            <h4 class="text-xs font-bold text-slate-900">PHP Security Monitoring</h4>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Detects outdated, security-only, unsupported, and end-of-life PHP runtimes with clear startup and Settings warnings.
-          </p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Laravel Project Workflows</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Create Laravel projects with Composer, install dependencies for existing apps, run common Artisan tasks, and work with Vite/HMR through local NGINX domains.</p>
         </div>
-
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-              </svg>
-            </span>
-            <h4 class="text-xs font-bold text-slate-900">One-Click PHP Security Updates</h4>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Checks the official Windows PHP catalog every 6 hours and installs the latest security patch or recommended <strong>PHP 8.5</strong> upgrade.
-          </p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">phpMyAdmin Integration &amp; SQL Editor</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Open an integrated phpMyAdmin database interface and use the SQL editor with improved query-writing assistance.</p>
         </div>
-
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-7 h-7 rounded-lg bg-sky-50 border border-sky-100 text-sky-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="20 6 9 17 4 12"/>
-              </svg>
-            </span>
-            <h4 class="text-xs font-bold text-slate-900">Verified PHP Downloads</h4>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Validates official PHP packages with cryptographic <code class="font-mono text-[11px] bg-slate-100 px-1 rounded">SHA-256</code> checksums when supplied by the release catalog.
-          </p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Live Service Logs &amp; Tray Controls</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Follow NGINX, database, and PHP logs as they update; manage services and running sites from the system tray.</p>
         </div>
-
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <div class="flex items-center gap-2.5 mb-2">
-            <span class="w-7 h-7 rounded-lg bg-purple-50 border border-purple-100 text-purple-600 flex items-center justify-center shrink-0">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" stroke-width="2"/>
-                <polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="12 6 12 12 16 14"/>
-              </svg>
-            </span>
-            <h4 class="text-xs font-bold text-slate-900">Faster App Update Alerts</h4>
-          </div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Checks for new C-Script releases every 6 hours and immediately after internet connectivity returns.
-          </p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Better Local Proxy &amp; SSL Setup</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Configure local proxy bypass more easily, create trusted local HTTPS certificates with mkcert, and refine local routing.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Per-Site PHP FastCGI</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Choose NGINX FastCGI with a dedicated PHP worker for supported sites, while retaining the standard local PHP server option.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Mailpit-Compatible Inbox &amp; Tunnels</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Use the embedded SMTP inbox and expanded public tunnel options, including Cloudflare and optional ngrok configuration.</p>
         </div>
       </div>
 
       <div class="mt-5 pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
-        <div>
-          <strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.5</strong> installations receive v<?php echo htmlspecialchars($appConfig['version']); ?> automatically via the in-app updater. If updating from <strong>v1.2.4 or earlier</strong>, download and run <code class="font-mono text-[11px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">C-Script-LocalHost-Panel-Setup-<?php echo htmlspecialchars($appConfig['version']); ?>.exe</code> once (all projects and databases are preserved).
-        </div>
+        <div><strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.6</strong> installations can update through the in-app updater. New users can download Setup; the portable executable is also available. Windows installers are unsigned, so only run downloads from the official release page.</div>
       </div>
     </div>
 
