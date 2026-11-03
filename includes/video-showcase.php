@@ -12,7 +12,7 @@
         See C-Script LocalHost Panel in Action.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Watch how effortlessly you can launch local projects, use the new Laravel and database workflows, inspect live service logs, toggle PHP engines, and share client previews.
+        Watch how effortlessly you can launch local projects, generate realistic database fixtures, refresh data views automatically, rely on safer HTTPS/NGINX handling, toggle PHP engines, and share client previews.
       </p>
     </div>
 

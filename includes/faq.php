@@ -74,15 +74,15 @@
         </div>
       </div>
 
-      <!-- Question 4: What's new in v1.2.7 -->
+      <!-- Question 4: What's new in v1.2.8 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
-          <h3 class="text-base font-bold text-slate-900">What new development tools are included in v1.2.7?</h3>
+          <h3 class="text-base font-bold text-slate-900">What is new in v1.2.8 for databases and local HTTPS?</h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
-          <p>Version 1.2.7 expands Laravel workflows with Composer project setup, dependency installation, common Artisan tasks, and Vite/HMR proxying through local domains. It also adds phpMyAdmin integration, improved SQL editing, live service logs, tray controls, local proxy bypass tools, trusted HTTPS certificate setup, per-site NGINX FastCGI, and expanded tunnel options.</p>
-          <p class="mt-2">Optional tools such as mkcert and ngrok may need to be installed separately. New users can choose the Setup installer or portable executable from the official GitHub release page.</p>
+          <p>Version 1.2.8 can generate 10–1,000 schema-aware MySQL test rows in one transaction, including support for enums, JSON, dates, foreign keys, and generated columns. Connected database views can refresh automatically every four seconds, with a saved toggle and safe pauses while editing. The release also improves certificate recovery and makes NGINX reloads safer and more efficient.</p>
+          <p class="mt-2">Existing v1.2.7 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
         </div>
       </div>
 

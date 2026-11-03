@@ -65,8 +65,8 @@
             </tr>
 
             <tr>
-              <td class="font-semibold text-slate-900 py-4 px-6">Local Wildcard SSL (*.test)</td>
-              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Automatic &amp; Pre-trusted</td>
+              <td class="font-semibold text-slate-900 py-4 px-6">Local Wildcard SSL (*.test) <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">Improved v1.2.8</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Automatic, Repaired &amp; Safely Reloaded</td>
               <td class="py-4 px-6 text-rose-500">Manual openssl.exe config</td>
               <td class="py-4 px-6 text-slate-500">Self-signed browser warnings</td>
               <td class="py-4 px-6 text-slate-500">Manual mkcert setup</td>
@@ -119,6 +119,14 @@
               <td class="py-4 px-6 text-slate-500">Separate installation</td>
               <td class="py-4 px-6 text-slate-500">External database tools</td>
               <td class="py-4 px-6 text-slate-500">Separate container / client</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Schema-Aware Mock Data &amp; Auto-Refresh <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.8</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Constraint-Aware Data + 4s Refresh</td>
+              <td class="py-4 px-6 text-slate-500">Manual SQL fixtures / refresh</td>
+              <td class="py-4 px-6 text-slate-500">Manual data entry / refresh</td>
+              <td class="py-4 px-6 text-slate-500">Separate seed scripts / tools</td>
             </tr>
 
             <tr>

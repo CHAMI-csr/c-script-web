@@ -16,7 +16,7 @@
         </span>
         <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">Laravel Tooling, phpMyAdmin, Live Logs &amp; More →</span>
+        <span class="text-indigo-600/90 font-medium">Schema-Aware Database Tools, Safer HTTPS &amp; NGINX →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Build and debug locally with one-click Laravel setup, Artisan workflows, Vite/HMR routing, phpMyAdmin, SQL tools, live service logs, NGINX FastCGI, trusted local SSL, and flexible public tunnels. Keep multi-version PHP and SHA-256 verified security updates close at hand.
+        Generate realistic, schema-aware MySQL test data and keep database views fresh with automatic refresh. v1.2.8 also hardens local HTTPS certificates and NGINX reloads—alongside Laravel, phpMyAdmin, multi-version PHP, and the rest of your Windows dev stack.
         <strong class="text-slate-800 font-semibold">No Docker required; your local stack stays on Windows.</strong>
       </p>
 
