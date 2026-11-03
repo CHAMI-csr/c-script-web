@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.7 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.8 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -163,8 +163,8 @@ Security: Directory traversal guard passed (Within project root)`
     details: [
       'Auto-Start on Site Launch: Starting any local site automatically boots NGINX, syncs Windows hosts, and updates reverse proxy rules.',
       'Real-Time Sidebar Status Pill: Monitor NGINX state (🟢 NGINX: 80 / 🟡 NGINX: off) directly from the sidebar footer on every screen.',
-      'Built-in wildcard SSL certificates (*.test) with pre-trusted local Certificate Authority and zero browser warnings.',
-      'High-performance reverse proxy that routes requests dynamically to PHP and framework backends.'
+      'Wildcard local HTTPS certificates with safer renewal and automatic repair of missing certificate references before NGINX starts.',
+      'Reloads are limited to the app-managed NGINX master, coalesced when requested concurrently, and skipped when proxy configuration is unchanged.'
     ],
     codePreview: `# Automated C-Script NGINX Virtual Host
 server {
@@ -188,17 +188,17 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'MySQL & MariaDB Database Studio + Visual ER Diagrams',
-    subtitle: 'Native MySQL detector and 1-click portable MariaDB 11.4 LTS server.',
-    badge: 'Database Studio',
+    title: 'Database Studio: Smart Test Data & Auto-Refresh',
+    subtitle: 'Generate realistic MySQL fixtures that respect your schema, while connected database views stay in sync automatically.',
+    badge: 'New in v1.2.8',
     details: [
-      'Detects running Windows MySQL services (port 3306) or starts isolated portable MariaDB with zero setup.',
-      'Visual table manager: create tables, edit rows, drop columns, and manage foreign key constraints.',
-      'Interactive Entity-Relationship (ER) Diagram visualizer generated directly from database schemas.',
-      '1-Click Laravel 11 migration generator: turn any live SQL table into production-ready PHP migrations.'
+      'Generate 10–1,000 realistic MySQL rows in one transaction, respecting column types, lengths, enums, JSON, dates, foreign keys, and generated columns.',
+      'Automatic database refresh detects external schema and row changes every four seconds, with a saved On/Off control.',
+      'Refresh pauses safely during editing or dialogs so in-progress database work is not interrupted.',
+      'Continue using the table editor, SQL tools, ER diagrams, phpMyAdmin, and Laravel migration export.'
     ],
     codePreview: `<?php
-// Auto-generated Laravel 11 Migration from C-Script Studio
+// C-Script LocalHost Panel v1.2.8 — Database Studio example
 use Illuminate\\Database\\Migrations\\Migration;
 use Illuminate\\Database\\Schema\\Blueprint;
 use Illuminate\\Support\\Facades\\Schema;
@@ -214,11 +214,11 @@ return new class extends Migration {
         });
     }
 };`,
-    terminalTitle: 'mariadb-studio • status',
+    terminalTitle: 'database-studio • mock data & auto-refresh',
     terminalOutput: `Connection: 127.0.0.1:3306 (user: root)
-Server: MariaDB 11.4.5-MariaDB (Portable Standalone)
-Uptime: 2 hours 45 mins | Databases: 8 | Active Connections: 3
-✨ Visual ER Diagram generated for schema 'ecommerce_db'`
+[Mock Data] Generated 100 schema-aware rows in one transaction
+[Auto-Refresh] Enabled • Last check: 4 seconds ago
+[Database] External schema/data changes detected and view refreshed`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

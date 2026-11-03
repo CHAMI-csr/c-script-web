@@ -170,15 +170,15 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            MariaDB Studio, phpMyAdmin &amp; Visual ER Diagrams
+            Database Studio, Smart Test Data &amp; Auto-Refresh
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Use the built-in SQL editor, launch phpMyAdmin, inspect tables, run queries, render interactive Entity-Relationship (ER) diagrams, and export schemas directly to Laravel migration files.
+            Generate realistic, schema-aware MySQL fixtures in one transaction, then let connected views refresh automatically when the database changes. The studio also includes SQL editing, phpMyAdmin, ER diagrams, and Laravel migration export.
           </p>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-100 text-xs font-medium text-slate-700">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-slate-100 text-xs font-medium text-slate-700">
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Visual Table Editor
           </div>
@@ -190,6 +190,12 @@
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Laravel Migration Export
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-500 font-bold">✓</span> Schema-Aware Mock Data
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-500 font-bold">✓</span> 4-Second Auto Refresh
           </div>
         </div>
       </div>
