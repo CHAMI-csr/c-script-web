@@ -5,14 +5,14 @@
  *
  * Designed in the HitPay SaaS aesthetic: clean, minimal, human-crafted with precision.
  * Author: Chamika Sandeepa
- * Version: 1.2.9
+ * Version: 1.2.10
  */
 
 $appConfig = [
     'name' => 'C-Script LocalHost Panel',
-    'version' => '1.2.9',
+    'version' => '1.2.10',
     'tagline' => 'Modern, High-Performance Local Development Suite for Windows',
-    'description' => 'Build locally with a smarter SQL editor, one-statement and full-script execution, MySQL routine support, collapsible results, reliable SQL exports, schema-aware mock data, automatic database refresh, safer local HTTPS, and zero-config Windows development tools.',
+    'description' => 'Build locally with a resizable SQL workspace, collapsible database panels, remembered layouts, SQL comment shortcuts, routine-aware scripts, reliable exports, schema-aware test data, and automatic database refresh.',
     'siteUrl' => 'https://c-script.opik.net/',
     'githubUrl' => 'https://github.com/CHAMI-csr/c-script-localhost-panel',
     'releaseDate' => 'November 11, 2026',

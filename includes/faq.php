@@ -74,15 +74,15 @@
         </div>
       </div>
 
-      <!-- Question 4: What's new in v1.2.9 -->
+      <!-- Question 4: What's new in v1.2.10 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
-          <h3 class="text-base font-bold text-slate-900">How does the v1.2.9 SQL editor work?</h3>
+          <h3 class="text-base font-bold text-slate-900">How do I resize and restore my workspace in v1.2.10?</h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
-          <p>In v1.2.9, select a query or place the cursor inside a statement and use Run statement or Ctrl+Enter. Use Run all or Ctrl+Shift+Enter for a full script. SQL parsing understands comments, quoted semicolons, and DELIMITER blocks for MySQL procedures and triggers. Results can be collapsed, and editor, pagination, and query export workflows are more reliable.</p>
-          <p class="mt-2">Existing v1.2.8 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
+          <p>In v1.2.10, drag the database-tree divider to resize it, use keyboard arrows for precise sizing, or collapse it. Drag the Results bar to resize the SQL editor/output split; double-click it to collapse or expand results. Sidebar, database-tree, editor-height, and results visibility settings are remembered across launches. Use Ctrl+/ to comment or uncomment the current SQL line or selection.</p>
+          <p class="mt-2">Existing v1.2.9 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
         </div>
       </div>
 

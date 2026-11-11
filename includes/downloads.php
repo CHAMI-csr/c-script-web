@@ -60,7 +60,7 @@
             </div>
             <div class="flex items-start gap-2 text-xs text-indigo-700 font-medium">
               <span class="text-indigo-600 font-bold shrink-0">✨</span>
-              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: statement-by-statement SQL, Run all scripts, MySQL routines, collapsible results &amp; reliable exports</span>
+              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: resizable database and SQL panels, remembered layouts, and the Ctrl+/ SQL comment shortcut</span>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
 
     </div>
 
-    <!-- What's New in v1.2.9 Release Highlights -->
+    <!-- What's New in v1.2.10 Release Highlights -->
     <div class="card-saas border border-indigo-200/80 bg-gradient-to-br from-indigo-50/40 via-white to-slate-50/60 rounded-2xl p-6 sm:p-8 max-w-6xl mx-auto mb-10 shadow-md">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200/80">
         <div class="flex items-center gap-3">
@@ -209,7 +209,7 @@
               <h3 class="text-lg font-extrabold text-slate-900">What's New in Version <?php echo htmlspecialchars($appConfig['version']); ?></h3>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Latest Release</span>
             </div>
-            <p class="text-xs text-slate-500 mt-0.5">Smarter SQL Workflows &amp; Reliable Exports • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
+            <p class="text-xs text-slate-500 mt-0.5">Flexible Workspaces &amp; Faster SQL Editing • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
           </div>
         </div>
         <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/tag/v<?php echo htmlspecialchars($appConfig['version']); ?>" target="_blank" rel="noopener noreferrer"
@@ -220,25 +220,25 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Run One SQL Statement</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Select a query or place the cursor inside a statement, then run it with the new statement action or <code class="font-mono text-[11px]">Ctrl+Enter</code>.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Resizable Database &amp; SQL Panels</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Resize or collapse the database tree and drag the Results bar to choose how much room the SQL editor and results receive.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Scripts &amp; MySQL Routines</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Run a complete script with <code class="font-mono text-[11px]">Ctrl+Shift+Enter</code>. The parser handles comments, quoted semicolons, and <code class="font-mono text-[11px]">DELIMITER</code> blocks for routines.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Remembered Workspace Layout</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Sidebar state, database-tree width and visibility, editor height, and Results visibility persist across launches.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Collapsible Results &amp; Cleaner Controls</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Minimize or expand the shared results table from its Results bar, and access database actions from a dedicated toolbar.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">SQL Comment Shortcut</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Use <code class="font-mono text-[11px]">Ctrl+/</code> to comment or uncomment the current line or selected lines, or use the Comment toolbar action.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Safer SQL Editing &amp; Exports</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Benefit from improved formatting, pagination, duplicate-run prevention, DDL refreshes, stable disconnect state, and more reliable query exports.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Responsive, Stable Controls</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Toolbars scroll in narrow windows; resize limits and drag cleanup prevent panels getting stuck or unusably small.</p>
         </div>
       </div>
 
       <div class="mt-5 pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
-        <div><strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.8</strong> installations can update through the in-app updater. New users can download Setup; the portable executable is also available. Windows installers are unsigned, so only run downloads from the official release page.</div>
+        <div><strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.9</strong> installations can update through the in-app updater. New users can download Setup; the portable executable is also available. Windows installers are unsigned, so only run downloads from the official release page.</div>
       </div>
     </div>
 

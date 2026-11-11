@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.9 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.10 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,16 +188,16 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'SQL Editor: Statement Runs, Scripts & MySQL Routines',
-    subtitle: 'Run just the query you need or execute a complete SQL script, with routine-aware parsing and collapsible results.',
-    badge: 'Updated in v1.2.9',
+    title: 'Flexible SQL Workspace & Remembered Layouts',
+    subtitle: 'Resize the database and results panels, restore your preferred layout at launch, and comment SQL with a shortcut.',
+    badge: 'New in v1.2.10',
     details: [
-      'Select SQL or place the cursor in a statement, then run that statement with Ctrl+Enter.',
-      'Run an entire SQL script with Ctrl+Shift+Enter when needed.',
-      'Statement parsing understands comments, quoted semicolons, and DELIMITER blocks used by procedures and triggers.',
-      'Use a collapsible shared results panel plus improved formatting, pagination, DDL refreshes, and exports.'
+      'Resize or collapse the application sidebar and database tree; use keyboard arrows for precise tree sizing.',
+      'Drag the Results bar to rebalance the SQL editor and output, or double-click it to collapse or expand results.',
+      'Sidebar, database-tree size/visibility, editor height, and results visibility persist across launches.',
+      'Press Ctrl+/ to comment or uncomment the current SQL line or selected lines; a Comment toolbar action is also available.'
     ],
-    codePreview: `-- C-Script LocalHost Panel v1.2.9 — SQL Editor example
+    codePreview: `-- C-Script LocalHost Panel v1.2.10 — SQL Workspace example
 DELIMITER //
 CREATE PROCEDURE find_recent_orders()
 BEGIN
@@ -208,11 +208,11 @@ END //
 DELIMITER ;
 
 CALL find_recent_orders();`,
-    terminalTitle: 'sql-editor • statement execution',
-    terminalOutput: `Connection: 127.0.0.1:3306 (user: root)
-[Run statement] Selected query executed (Ctrl+Enter)
-[Parser] DELIMITER block parsed: procedure sync_orders
-[Results] 42 rows • Collapsed from the Results bar`
+    terminalTitle: 'sql-editor • workspace controls',
+    terminalOutput: `Sidebar: Collapsed to icon rail • State saved
+[Database Tree] Width set to 320px with keyboard arrows
+[Results] Drag to resize • Double-click to collapse/expand
+[SQL Editor] Ctrl+/ toggled comment for selected lines`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

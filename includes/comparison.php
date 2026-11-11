@@ -130,11 +130,19 @@
             </tr>
 
             <tr>
-              <td class="font-semibold text-slate-900 py-4 px-6">SQL Statement &amp; Script Workflows <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.9</span></td>
+              <td class="font-semibold text-slate-900 py-4 px-6">SQL Statement &amp; Script Workflows <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">v1.2.9</span></td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Statement/Run All, DELIMITER, Collapsible Results</td>
               <td class="py-4 px-6 text-slate-500">Manual queries / external tools</td>
               <td class="py-4 px-6 text-slate-500">External editor required</td>
               <td class="py-4 px-6 text-slate-500">CLI scripts / separate SQL client</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Resizable Panels &amp; Saved Workspace <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.10</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Resizable Sidebar, DB Tree &amp; SQL Results</td>
+              <td class="py-4 px-6 text-slate-500">Separate windows / fixed panes</td>
+              <td class="py-4 px-6 text-slate-500">Fixed database and editor layouts</td>
+              <td class="py-4 px-6 text-slate-500">Manual editor/window arrangement</td>
             </tr>
 
             <tr>

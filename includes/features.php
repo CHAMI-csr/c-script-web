@@ -170,11 +170,11 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            SQL Editor, Smart Test Data &amp; Auto-Refresh
+            Flexible SQL Workspace, Smart Test Data &amp; Auto-Refresh
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Run a selected SQL statement or an entire script, with parsing for quoted semicolons and MySQL DELIMITER routines. Manage results from the collapsible Results bar; schema-aware fixtures, automatic refresh, phpMyAdmin, ER diagrams, and Laravel migration export remain built in.
+            Resize or collapse the database tree and drag the Results bar to balance the SQL editor and output. Layout choices persist across launches, and Ctrl+/ comments or uncomments the current line or selection. Statement/script execution, MySQL routine parsing, schema-aware fixtures, auto-refresh, phpMyAdmin, ER diagrams, and Laravel migration export remain built in.
           </p>
         </div>
 
@@ -183,13 +183,13 @@
             <span class="text-emerald-500 font-bold">✓</span> Visual Table Editor
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> SQL Statement &amp; Run All
+            <span class="text-emerald-500 font-bold">✓</span> Resizable DB &amp; Results Panels
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Interactive ER Diagram
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Laravel Migration Export
+            <span class="text-emerald-500 font-bold">✓</span> Ctrl+/ SQL Comment Shortcut
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Schema-Aware Mock Data
