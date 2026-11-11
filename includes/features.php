@@ -170,11 +170,11 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Flexible SQL Workspace, Smart Test Data &amp; Auto-Refresh
+            Column-Aware SQL Autocomplete &amp; Smart Data Tools
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Resize or collapse the database tree and drag the Results bar to balance the SQL editor and output. Layout choices persist across launches, and Ctrl+/ comments or uncomments the current line or selection. Statement/script execution, MySQL routine parsing, schema-aware fixtures, auto-refresh, phpMyAdmin, ER diagrams, and Laravel migration export remain built in.
+            Autocomplete now suggests columns from your selected database and understands JOIN tables and aliases. Suggestions include source table, MySQL type, and key details, prioritize the active SQL clause, and quote unusual identifiers safely. Continue to resize the workspace, run scripts and routines, generate schema-aware fixtures, and refresh database views automatically.
           </p>
         </div>
 
@@ -183,13 +183,13 @@
             <span class="text-emerald-500 font-bold">✓</span> Visual Table Editor
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Resizable DB &amp; Results Panels
+            <span class="text-emerald-500 font-bold">✓</span> Column-Aware SQL Suggestions
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Interactive ER Diagram
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Ctrl+/ SQL Comment Shortcut
+            <span class="text-emerald-500 font-bold">✓</span> JOIN &amp; Alias Intelligence
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Schema-Aware Mock Data

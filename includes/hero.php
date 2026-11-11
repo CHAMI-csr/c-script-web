@@ -16,7 +16,7 @@
         </span>
         <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">Resizable SQL Panels, Remembered Layouts &amp; Ctrl+/ Comments →</span>
+        <span class="text-indigo-600/90 font-medium">Column-Aware SQL Autocomplete &amp; Smart JOIN Suggestions →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Resize or collapse the app sidebar, database tree, and SQL results panel; your workspace layout is remembered between launches. v1.2.10 also adds a Ctrl+/ SQL comment shortcut and responsive panel controls, alongside statement and full-script execution.
+        Write SQL faster with column-aware suggestions, JOIN and alias intelligence, and context-aware completion details for your schema. v1.2.11 also quotes unusual identifiers safely and improves autocomplete reliability across queries.
         <strong class="text-slate-800 font-semibold">No Docker required; your local stack stays on Windows.</strong>
       </p>
 

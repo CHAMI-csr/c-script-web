@@ -12,7 +12,7 @@
         See C-Script LocalHost Panel in Action.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Watch how effortlessly you can launch local projects, resize the database browser and SQL workspace, restore saved layouts, and comment SQL selections with a shortcut.
+        Watch how effortlessly you can launch local projects, write queries with column-aware autocomplete, qualified JOIN suggestions, and useful schema details right in the SQL editor.
       </p>
     </div>
 

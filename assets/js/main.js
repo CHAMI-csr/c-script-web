@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.10 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.11 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,31 +188,27 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'Flexible SQL Workspace & Remembered Layouts',
-    subtitle: 'Resize the database and results panels, restore your preferred layout at launch, and comment SQL with a shortcut.',
-    badge: 'New in v1.2.10',
+    title: 'Column-Aware SQL Autocomplete & JOIN Intelligence',
+    subtitle: 'Get schema-specific column suggestions with query context, table aliases, types, and key details.',
+    badge: 'New in v1.2.11',
     details: [
-      'Resize or collapse the application sidebar and database tree; use keyboard arrows for precise tree sizing.',
-      'Drag the Results bar to rebalance the SQL editor and output, or double-click it to collapse or expand results.',
-      'Sidebar, database-tree size/visibility, editor height, and results visibility persist across launches.',
-      'Press Ctrl+/ to comment or uncomment the current SQL line or selected lines; a Comment toolbar action is also available.'
+      'Autocomplete includes columns from the selected database, not only table names, functions, and keywords.',
+      'JOIN and alias detection offers qualified suggestions such as customer.Name and invoice.Total.',
+      'Column details show source table, MySQL data type, and primary/index key status from a fast cached schema index.',
+      'Context-aware ordering prioritizes columns in SELECT, WHERE, ON, GROUP BY, ORDER BY, HAVING, and SET; unusual identifiers are quoted safely.'
     ],
-    codePreview: `-- C-Script LocalHost Panel v1.2.10 — SQL Workspace example
-DELIMITER //
-CREATE PROCEDURE find_recent_orders()
-BEGIN
-    SELECT id, status, total_amount
-    FROM orders
-    WHERE created_at >= CURRENT_DATE - INTERVAL 7 DAY;
-END //
-DELIMITER ;
-
-CALL find_recent_orders();`,
-    terminalTitle: 'sql-editor • workspace controls',
-    terminalOutput: `Sidebar: Collapsed to icon rail • State saved
-[Database Tree] Width set to 320px with keyboard arrows
-[Results] Drag to resize • Double-click to collapse/expand
-[SQL Editor] Ctrl+/ toggled comment for selected lines`
+    codePreview: `-- Column-aware completion understands table aliases
+SELECT customer.Name, invoice.Total
+FROM customers AS customer
+JOIN invoices AS invoice
+  ON invoice.customer_id = customer.id
+WHERE customer.Status = 'active';`,
+    terminalTitle: 'sql-editor • column-aware completion',
+    terminalOutput: `Schema index: 48 tables • 312 columns cached
+[JOIN] customer.Name • customers • VARCHAR • indexed
+[JOIN] invoice.Total • invoices • DECIMAL
+[Context] WHERE clause • matching columns ranked first
+[Identifier] Reserved names inserted with MySQL backticks`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

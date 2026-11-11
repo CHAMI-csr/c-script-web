@@ -74,15 +74,15 @@
         </div>
       </div>
 
-      <!-- Question 4: What's new in v1.2.10 -->
+      <!-- Question 4: What's new in v1.2.11 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
-          <h3 class="text-base font-bold text-slate-900">How do I resize and restore my workspace in v1.2.10?</h3>
+          <h3 class="text-base font-bold text-slate-900">How does column-aware SQL autocomplete work in v1.2.11?</h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
-          <p>In v1.2.10, drag the database-tree divider to resize it, use keyboard arrows for precise sizing, or collapse it. Drag the Results bar to resize the SQL editor/output split; double-click it to collapse or expand results. Sidebar, database-tree, editor-height, and results visibility settings are remembered across launches. Use Ctrl+/ to comment or uncomment the current SQL line or selection.</p>
-          <p class="mt-2">Existing v1.2.9 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
+          <p>In v1.2.11, autocomplete indexes columns in the selected database and suggests them in context, including JOINs and aliases. Suggestions show source table, MySQL type, and primary/index key details. Column completion is prioritized in clauses such as SELECT, WHERE, ON, GROUP BY, ORDER BY, HAVING, and SET; reserved or unusual identifiers are automatically wrapped in backticks.</p>
+          <p class="mt-2">Existing v1.2.10 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
         </div>
       </div>
 
