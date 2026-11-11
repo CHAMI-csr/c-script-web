@@ -130,6 +130,14 @@
             </tr>
 
             <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">SQL Statement &amp; Script Workflows <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.9</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Statement/Run All, DELIMITER, Collapsible Results</td>
+              <td class="py-4 px-6 text-slate-500">Manual queries / external tools</td>
+              <td class="py-4 px-6 text-slate-500">External editor required</td>
+              <td class="py-4 px-6 text-slate-500">CLI scripts / separate SQL client</td>
+            </tr>
+
+            <tr>
               <td class="font-semibold text-slate-900 py-4 px-6">Instant Public Client Sharing</td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Built-in Cloudflare Tunnel</td>
               <td class="py-4 px-6 text-rose-500">None</td>

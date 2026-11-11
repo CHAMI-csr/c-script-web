@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.8 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.9 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,37 +188,31 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'Database Studio: Smart Test Data & Auto-Refresh',
-    subtitle: 'Generate realistic MySQL fixtures that respect your schema, while connected database views stay in sync automatically.',
-    badge: 'New in v1.2.8',
+    title: 'SQL Editor: Statement Runs, Scripts & MySQL Routines',
+    subtitle: 'Run just the query you need or execute a complete SQL script, with routine-aware parsing and collapsible results.',
+    badge: 'Updated in v1.2.9',
     details: [
-      'Generate 10–1,000 realistic MySQL rows in one transaction, respecting column types, lengths, enums, JSON, dates, foreign keys, and generated columns.',
-      'Automatic database refresh detects external schema and row changes every four seconds, with a saved On/Off control.',
-      'Refresh pauses safely during editing or dialogs so in-progress database work is not interrupted.',
-      'Continue using the table editor, SQL tools, ER diagrams, phpMyAdmin, and Laravel migration export.'
+      'Select SQL or place the cursor in a statement, then run that statement with Ctrl+Enter.',
+      'Run an entire SQL script with Ctrl+Shift+Enter when needed.',
+      'Statement parsing understands comments, quoted semicolons, and DELIMITER blocks used by procedures and triggers.',
+      'Use a collapsible shared results panel plus improved formatting, pagination, DDL refreshes, and exports.'
     ],
-    codePreview: `<?php
-// C-Script LocalHost Panel v1.2.8 — Database Studio example
-use Illuminate\\Database\\Migrations\\Migration;
-use Illuminate\\Database\\Schema\\Blueprint;
-use Illuminate\\Support\\Facades\\Schema;
+    codePreview: `-- C-Script LocalHost Panel v1.2.9 — SQL Editor example
+DELIMITER //
+CREATE PROCEDURE find_recent_orders()
+BEGIN
+    SELECT id, status, total_amount
+    FROM orders
+    WHERE created_at >= CURRENT_DATE - INTERVAL 7 DAY;
+END //
+DELIMITER ;
 
-return new class extends Migration {
-    public function up(): void {
-        Schema::create('orders', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->decimal('total_amount', 10, 2);
-            $table->string('status', 32)->default('pending');
-            $table->timestamps();
-        });
-    }
-};`,
-    terminalTitle: 'database-studio • mock data & auto-refresh',
+CALL find_recent_orders();`,
+    terminalTitle: 'sql-editor • statement execution',
     terminalOutput: `Connection: 127.0.0.1:3306 (user: root)
-[Mock Data] Generated 100 schema-aware rows in one transaction
-[Auto-Refresh] Enabled • Last check: 4 seconds ago
-[Database] External schema/data changes detected and view refreshed`
+[Run statement] Selected query executed (Ctrl+Enter)
+[Parser] DELIMITER block parsed: procedure sync_orders
+[Results] 42 rows • Collapsed from the Results bar`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

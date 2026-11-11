@@ -112,7 +112,7 @@
             </div>
 
             <div class="p-4 sm:p-5 font-mono text-xs sm:text-[13px] text-slate-300 leading-relaxed overflow-x-auto whitespace-pre selection:bg-indigo-600 selection:text-white" id="feature-tab-code">&lt;?php
-// C-Script LocalHost Panel v1.2.8 — PHP Runtime &amp; Security Check
+// C-Script LocalHost Panel v1.2.9 — PHP Runtime &amp; Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
