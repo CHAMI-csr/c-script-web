@@ -12,7 +12,7 @@
         See C-Script LocalHost Panel in Action.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Watch how effortlessly you can launch local projects, write queries with column-aware autocomplete, qualified JOIN suggestions, and useful schema details right in the SQL editor.
+        Watch how effortlessly you can launch local projects, use reliable SQL autocomplete in nested queries and self-JOINs, and edit database schemas with safer rename tools.
       </p>
     </div>
 

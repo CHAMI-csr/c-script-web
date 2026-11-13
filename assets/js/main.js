@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.11 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.14 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,27 +188,28 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'Column-Aware SQL Autocomplete & JOIN Intelligence',
-    subtitle: 'Get schema-specific column suggestions with query context, table aliases, types, and key details.',
-    badge: 'New in v1.2.11',
+    title: 'Nested & Self-JOIN SQL Autocomplete',
+    subtitle: 'Qualified column suggestions now resolve aliases reliably in correlated and nested queries.',
+    badge: 'Updated in v1.2.14',
     details: [
-      'Autocomplete includes columns from the selected database, not only table names, functions, and keywords.',
-      'JOIN and alias detection offers qualified suggestions such as customer.Name and invoice.Total.',
-      'Column details show source table, MySQL data type, and primary/index key status from a fast cached schema index.',
-      'Context-aware ordering prioritizes columns in SELECT, WHERE, ON, GROUP BY, ORDER BY, HAVING, and SET; unusual identifiers are quoted safely.'
+      'Resolve both E1.ColumnName and E2.ColumnName when the same physical table is referenced more than once.',
+      'Use explicit SQL aliases ahead of coincidentally same-named physical tables when resolving qualified columns.',
+      'Column suggestions include schema details and remain context-aware in SELECT, WHERE, JOIN, and other SQL clauses.',
+      'Enter, Tab, and mouse acceptance close the suggestions popup consistently; stale asynchronous requests cannot reopen it.'
     ],
-    codePreview: `-- Column-aware completion understands table aliases
-SELECT customer.Name, invoice.Total
-FROM customers AS customer
-JOIN invoices AS invoice
-  ON invoice.customer_id = customer.id
-WHERE customer.Status = 'active';`,
-    terminalTitle: 'sql-editor • column-aware completion',
-    terminalOutput: `Schema index: 48 tables • 312 columns cached
-[JOIN] customer.Name • customers • VARCHAR • indexed
-[JOIN] invoice.Total • invoices • DECIMAL
-[Context] WHERE clause • matching columns ranked first
-[Identifier] Reserved names inserted with MySQL backticks`
+    codePreview: `-- Correlated self-JOIN aliases resolve independently
+SELECT E1.Name,
+       (SELECT COUNT(*)
+          FROM employee E2
+         WHERE E2.manager_id = E1.id) AS report_count
+FROM employee E1
+WHERE E1.active = 1;`,
+    terminalTitle: 'sql-editor • nested alias completion',
+    terminalOutput: `Schema index: employee columns cached
+[Outer alias] E1.Name • employee • VARCHAR
+[Nested alias] E2.manager_id • employee • INT
+[Resolution] E1 and E2 kept distinct in correlated query
+[Popup] Enter accepted • closed; stale request invalidated`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

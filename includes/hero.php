@@ -16,7 +16,7 @@
         </span>
         <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">Column-Aware SQL Autocomplete &amp; Smart JOIN Suggestions →</span>
+        <span class="text-indigo-600/90 font-medium">Nested SQL Aliases, Self-JOINs &amp; Reliable Autocomplete →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Write SQL faster with column-aware suggestions, JOIN and alias intelligence, and context-aware completion details for your schema. v1.2.11 also quotes unusual identifiers safely and improves autocomplete reliability across queries.
+        Get reliable column suggestions in nested queries and self-JOINs—even when the same table appears under multiple aliases. v1.2.14 improves completion popup behavior and complements the schema editing and rename tools added in recent updates.
         <strong class="text-slate-800 font-semibold">No Docker required; your local stack stays on Windows.</strong>
       </p>
 
