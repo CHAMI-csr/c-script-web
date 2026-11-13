@@ -74,15 +74,15 @@
         </div>
       </div>
 
-      <!-- Question 4: What's new in v1.2.8 -->
+      <!-- Question 4: What's new in v1.2.14 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
-          <h3 class="text-base font-bold text-slate-900">What is new in v1.2.8 for databases and local HTTPS?</h3>
+          <h3 class="text-base font-bold text-slate-900">Does SQL autocomplete support nested queries and self-JOIN aliases in v1.2.14?</h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
-          <p>Version 1.2.8 can generate 10–1,000 schema-aware MySQL test rows in one transaction, including support for enums, JSON, dates, foreign keys, and generated columns. Connected database views can refresh automatically every four seconds, with a saved toggle and safe pauses while editing. The release also improves certificate recovery and makes NGINX reloads safer and more efficient.</p>
-          <p class="mt-2">Existing v1.2.7 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
+          <p>Yes. v1.2.14 resolves qualified column suggestions in nested and correlated queries, including self-JOINs where aliases such as E1 and E2 refer to the same table. Explicit aliases take priority over same-named physical tables. Suggestions also dismiss reliably after Enter, Tab, or mouse acceptance, without stale schema requests reopening the popup.</p>
+          <p class="mt-2">Existing v1.2.11 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
         </div>
       </div>
 

@@ -60,7 +60,7 @@
             </div>
             <div class="flex items-start gap-2 text-xs text-indigo-700 font-medium">
               <span class="text-indigo-600 font-bold shrink-0">✨</span>
-              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: schema-aware MySQL mock data, automatic database refresh, and safer HTTPS/NGINX handling</span>
+              <span>New in v<?php echo htmlspecialchars($appConfig['version']); ?>: reliable nested/self-JOIN autocomplete, alias resolution, and a more stable completion popup</span>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
 
     </div>
 
-    <!-- What's New in v1.2.8 Release Highlights -->
+    <!-- What's New in v1.2.14 Release Highlights -->
     <div class="card-saas border border-indigo-200/80 bg-gradient-to-br from-indigo-50/40 via-white to-slate-50/60 rounded-2xl p-6 sm:p-8 max-w-6xl mx-auto mb-10 shadow-md">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200/80">
         <div class="flex items-center gap-3">
@@ -209,7 +209,7 @@
               <h3 class="text-lg font-extrabold text-slate-900">What's New in Version <?php echo htmlspecialchars($appConfig['version']); ?></h3>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Latest Release</span>
             </div>
-            <p class="text-xs text-slate-500 mt-0.5">Database Intelligence &amp; Safer Local Networking • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
+            <p class="text-xs text-slate-500 mt-0.5">Nested SQL Autocomplete &amp; Database Editing • Released <?php echo htmlspecialchars($appConfig['releaseDate']); ?></p>
           </div>
         </div>
         <a href="https://github.com/CHAMI-csr/c-script-localhost-panel/releases/tag/v<?php echo htmlspecialchars($appConfig['version']); ?>" target="_blank" rel="noopener noreferrer"
@@ -220,25 +220,25 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Schema-Aware Mock Data</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Generate 10–1,000 realistic MySQL test rows while respecting column types, lengths, enums, JSON, dates, generated columns, and foreign keys. Inserts are transactional.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Nested &amp; Self-JOIN Alias Completion</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Resolve qualified columns correctly in correlated and nested queries—even when aliases E1 and E2 refer to the same table.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Automatic Database Refresh</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Database views detect external schema and row changes every four seconds, with a saved On/Off control and safe pauses during edits and dialogs.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">More Reliable Autocomplete Popup</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Enter, Tab, and mouse acceptance now close suggestions consistently without stale schema requests reopening the popup.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Reliable Local HTTPS</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Repairs missing SSL references before NGINX starts and preserves existing valid certificates if replacement generation fails.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Complete Schema Editing</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Recent database tools let you rename/reorder columns, change indexes and keys, preserve timestamp behavior, and manage schema actions safely.</p>
         </div>
         <div class="bg-white p-4 rounded-xl border border-slate-200/90 shadow-sm">
-          <h4 class="text-xs font-bold text-slate-900 mb-2">Safer NGINX Reloads</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Targets only the app-managed NGINX process, coalesces concurrent reloads, and avoids reloads when proxy configuration is unchanged.</p>
+          <h4 class="text-xs font-bold text-slate-900 mb-2">Safer Rename &amp; Table Actions</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Use working rename dialogs and sidebar context actions with clearer progress, confirmations, and error feedback.</p>
         </div>
       </div>
 
       <div class="mt-5 pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
-        <div><strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.7</strong> installations can update through the in-app updater. New users can download Setup; the portable executable is also available. Windows installers are unsigned, so only run downloads from the official release page.</div>
+        <div><strong class="text-slate-800">Upgrade Note:</strong> Existing <strong>v1.2.11</strong> installations can update through the in-app updater. New users can download Setup; the portable executable is also available. Windows installers are unsigned, so only run downloads from the official release page.</div>
       </div>
     </div>
 

@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.8 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.14 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,37 +188,28 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'Database Studio: Smart Test Data & Auto-Refresh',
-    subtitle: 'Generate realistic MySQL fixtures that respect your schema, while connected database views stay in sync automatically.',
-    badge: 'New in v1.2.8',
+    title: 'Nested & Self-JOIN SQL Autocomplete',
+    subtitle: 'Qualified column suggestions now resolve aliases reliably in correlated and nested queries.',
+    badge: 'Updated in v1.2.14',
     details: [
-      'Generate 10–1,000 realistic MySQL rows in one transaction, respecting column types, lengths, enums, JSON, dates, foreign keys, and generated columns.',
-      'Automatic database refresh detects external schema and row changes every four seconds, with a saved On/Off control.',
-      'Refresh pauses safely during editing or dialogs so in-progress database work is not interrupted.',
-      'Continue using the table editor, SQL tools, ER diagrams, phpMyAdmin, and Laravel migration export.'
+      'Resolve both E1.ColumnName and E2.ColumnName when the same physical table is referenced more than once.',
+      'Use explicit SQL aliases ahead of coincidentally same-named physical tables when resolving qualified columns.',
+      'Column suggestions include schema details and remain context-aware in SELECT, WHERE, JOIN, and other SQL clauses.',
+      'Enter, Tab, and mouse acceptance close the suggestions popup consistently; stale asynchronous requests cannot reopen it.'
     ],
-    codePreview: `<?php
-// C-Script LocalHost Panel v1.2.8 — Database Studio example
-use Illuminate\\Database\\Migrations\\Migration;
-use Illuminate\\Database\\Schema\\Blueprint;
-use Illuminate\\Support\\Facades\\Schema;
-
-return new class extends Migration {
-    public function up(): void {
-        Schema::create('orders', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->decimal('total_amount', 10, 2);
-            $table->string('status', 32)->default('pending');
-            $table->timestamps();
-        });
-    }
-};`,
-    terminalTitle: 'database-studio • mock data & auto-refresh',
-    terminalOutput: `Connection: 127.0.0.1:3306 (user: root)
-[Mock Data] Generated 100 schema-aware rows in one transaction
-[Auto-Refresh] Enabled • Last check: 4 seconds ago
-[Database] External schema/data changes detected and view refreshed`
+    codePreview: `-- Correlated self-JOIN aliases resolve independently
+SELECT E1.Name,
+       (SELECT COUNT(*)
+          FROM employee E2
+         WHERE E2.manager_id = E1.id) AS report_count
+FROM employee E1
+WHERE E1.active = 1;`,
+    terminalTitle: 'sql-editor • nested alias completion',
+    terminalOutput: `Schema index: employee columns cached
+[Outer alias] E1.Name • employee • VARCHAR
+[Nested alias] E2.manager_id • employee • INT
+[Resolution] E1 and E2 kept distinct in correlated query
+[Popup] Enter accepted • closed; stale request invalidated`
   },
   tunnel: {
     title: 'Instant Public Sharing (Cloudflare Tunnel)',

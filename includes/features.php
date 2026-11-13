@@ -170,11 +170,11 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Database Studio, Smart Test Data &amp; Auto-Refresh
+            Nested SQL Autocomplete &amp; Database Editing
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Generate realistic, schema-aware MySQL fixtures in one transaction, then let connected views refresh automatically when the database changes. The studio also includes SQL editing, phpMyAdmin, ER diagrams, and Laravel migration export.
+            Column completion now resolves qualified aliases correctly in nested and correlated queries, including self-JOINs that reference the same table more than once. Suggestions show source table, type, and key details with safer popup handling. Database tools also support complete column/index editing, rename, and right-click workflows.
           </p>
         </div>
 
@@ -183,13 +183,13 @@
             <span class="text-emerald-500 font-bold">✓</span> Visual Table Editor
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> SQL Query Runner
+            <span class="text-emerald-500 font-bold">✓</span> Nested &amp; Self-JOIN Aliases
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Interactive ER Diagram
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Laravel Migration Export
+            <span class="text-emerald-500 font-bold">✓</span> Schema &amp; Index Editing
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Schema-Aware Mock Data
