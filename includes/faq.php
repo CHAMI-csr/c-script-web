@@ -74,15 +74,27 @@
         </div>
       </div>
 
-      <!-- Question 4: What's new in v1.2.14 -->
+      <!-- Question: What's new in v1.2.18 -->
       <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
         <div class="faq-trigger flex items-center justify-between gap-4">
-          <h3 class="text-base font-bold text-slate-900">Does SQL autocomplete support nested queries and self-JOIN aliases in v1.2.14?</h3>
+          <h3 class="text-base font-bold text-slate-900">What changed in Share Site in v1.2.18, and does ngrok need an account?</h3>
           <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
         </div>
         <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
-          <p>Yes. v1.2.14 resolves qualified column suggestions in nested and correlated queries, including self-JOINs where aliases such as E1 and E2 refer to the same table. Explicit aliases take priority over same-named physical tables. Suggestions also dismiss reliably after Enter, Tab, or mouse acceptance, without stale schema requests reopening the popup.</p>
-          <p class="mt-2">Existing v1.2.11 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
+          <p>v1.2.18 fixes localhost.run Share Site timeouts caused by ANSI and QR banner output: it detects the URL early, strips terminal control sequences, recognizes OSC-8 links and scheme-less localhost.run URLs, and uses cleaner no-color SSH output. v1.2.17 added one-click ngrok installation and automatic retry, but starting an ngrok tunnel still requires an ngrok account authtoken. v1.2.16 added local-site validation and Cloudflare edge readiness. Earlier v1.2.15 SQL editor improvements keep long scripts visible and recoverable.</p>
+          <p class="mt-2">Existing v1.2.17 users can update in-app. New users can download the Setup installer or portable executable from the official GitHub release page.</p>
+        </div>
+      </div>
+
+      <!-- Earlier release: v1.2.14 SQL autocomplete and schema editing -->
+      <div class="faq-item card-saas p-6 border border-slate-200 cursor-pointer">
+        <div class="faq-trigger flex items-center justify-between gap-4">
+          <h3 class="text-base font-bold text-slate-900">What SQL autocomplete and schema tools were added in v1.2.14?</h3>
+          <span class="faq-icon text-slate-400 font-bold text-lg transition-transform duration-200">↓</span>
+        </div>
+        <div class="faq-content hidden mt-4 pt-4 border-t border-slate-100 text-sm text-slate-600 leading-relaxed">
+          <p>v1.2.14 resolves qualified column suggestions in nested and correlated queries, including self-JOINs where aliases such as E1 and E2 refer to the same table. Explicit aliases take priority over same-named physical tables, and suggestions dismiss reliably after Enter, Tab, or mouse acceptance.</p>
+          <p class="mt-2">Database tools also support editing and renaming columns, managing indexes and keys, preserving timestamp behavior, and schema actions.</p>
         </div>
       </div>
 

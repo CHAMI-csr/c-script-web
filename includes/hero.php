@@ -16,7 +16,7 @@
         </span>
         <span>C-Script v<?php echo htmlspecialchars($appConfig['version']); ?> is Live</span>
         <span class="text-slate-400">•</span>
-        <span class="text-indigo-600/90 font-medium">Nested SQL Aliases, Self-JOINs &amp; Reliable Autocomplete →</span>
+        <span class="text-indigo-600/90 font-medium">Reliable localhost.run URLs &amp; Easier ngrok Setup →</span>
       </div>
 
       <!-- Main Headline -->
@@ -26,7 +26,7 @@
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto mb-10">
-        Get reliable column suggestions in nested queries and self-JOINs—even when the same table appears under multiple aliases. v1.2.14 improves completion popup behavior and complements the schema editing and rename tools added in recent updates.
+        Share Site now catches localhost.run URLs before terminal banners can hide them, strips control sequences, and understands linked or scheme-less URLs. v1.2.17 also added one-click ngrok installation and retry (an ngrok authtoken is required). Long SQL editing, autosave, and draft recovery remain available from v1.2.15.
         <strong class="text-slate-800 font-semibold">No Docker required; your local stack stays on Windows.</strong>
       </p>
 

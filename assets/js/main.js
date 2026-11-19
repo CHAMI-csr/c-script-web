@@ -93,7 +93,7 @@ const FEATURE_DATA = {
       'Herd & XAMPP Independence: Runtimes stored safely in %APPDATA% — never deleted when uninstalling third-party apps.'
     ],
     codePreview: `<?php
-// C-Script LocalHost Panel v1.2.14 — PHP Runtime & Security Check
+// C-Script LocalHost Panel v1.2.18 — PHP Runtime & Security Check
 echo "Current PHP Version: " . PHP_VERSION . " (Active Support)\\n";
 echo "Loaded Configuration: " . php_ini_loaded_file() . "\\n";
 echo "Active Extensions: " . implode(', ', ['curl', 'mysqli', 'pdo_mysql', 'mbstring', 'openssl']);
@@ -188,40 +188,40 @@ server {
 🌐 Proxy Route: https://myproject.test -> 127.0.0.1:8000`
   },
   database: {
-    title: 'Nested & Self-JOIN SQL Autocomplete',
-    subtitle: 'Qualified column suggestions now resolve aliases reliably in correlated and nested queries.',
-    badge: 'Updated in v1.2.14',
+    title: 'Long SQL Editor: Line Numbers, Autosave & Recovery',
+    subtitle: 'Keep large SQL scripts visible, aligned, and recoverable while you edit and scroll.',
+    badge: 'Updated in v1.2.15',
     details: [
-      'Resolve both E1.ColumnName and E2.ColumnName when the same physical table is referenced more than once.',
-      'Use explicit SQL aliases ahead of coincidentally same-named physical tables when resolving qualified columns.',
-      'Column suggestions include schema details and remain context-aware in SELECT, WHERE, JOIN, and other SQL clauses.',
-      'Enter, Tab, and mouse acceptance close the suggestions popup consistently; stale asynchronous requests cannot reopen it.'
+      'The editor no longer clips or turns blank/black past the initial viewport, and very large scripts remain editable without an artificial size limit.',
+      'Synchronized line numbers cover every physical source line; unwrapped long lines scroll horizontally while numbers stay aligned.',
+      'Changes autosave after a short delay; Ctrl+S saves the current file and Ctrl+Shift+S opens Save As.',
+      'Untitled queries are stored as recovery drafts and restored after an interrupted session; closing waits for pending writes.'
     ],
-    codePreview: `-- Correlated self-JOIN aliases resolve independently
+    codePreview: `-- Long SQL files stay visible and line-numbered
 SELECT E1.Name,
        (SELECT COUNT(*)
           FROM employee E2
          WHERE E2.manager_id = E1.id) AS report_count
 FROM employee E1
 WHERE E1.active = 1;`,
-    terminalTitle: 'sql-editor • nested alias completion',
-    terminalOutput: `Schema index: employee columns cached
-[Outer alias] E1.Name • employee • VARCHAR
-[Nested alias] E2.manager_id • employee • INT
-[Resolution] E1 and E2 kept distinct in correlated query
-[Popup] Enter accepted • closed; stale request invalidated`
+    terminalTitle: 'sql-editor • autosave & long-file status',
+    terminalOutput: `Editor: 18,432 lines • highlighting fallback active
+[Line Numbers] Synchronized with physical source lines
+[Autosave] Saved • recovery draft available
+[Scroll] Horizontal • source lines do not wrap
+[Share Site] Local origin verified • Cloudflare edge ready`
   },
   tunnel: {
-    title: 'Instant Public Sharing (Cloudflare Tunnel)',
-    subtitle: 'Share your local development site with clients or test on mobile in 3 seconds.',
-    badge: 'Free & Secure',
+    title: 'Reliable Share Site Tunnels',
+    subtitle: 'Reliable localhost.run URL detection, safer terminal parsing, and optional one-click ngrok setup.',
+    badge: 'Updated in v1.2.18',
     details: [
       'Zero port-forwarding or router configuration needed.',
-      'Zero account or token required — powered by secure Cloudflare Quick Tunnels.',
-      'Generates unique public HTTPS link (e.g. https://my-site.trycloudflare.com).',
-      'Test webhook integrations (Stripe, PayPal, HitPay) directly on your local machine.'
+      'Cloudflare Quick Tunnels need no token; ngrok is optional and requires an ngrok account authtoken.',
+      'Finds localhost.run links before large QR banners evict them from terminal output.',
+      'Strips terminal escape codes and recognizes OSC-8 links and supported hostnames without https://.',
     ],
-    codePreview: `# Cloudflare Tunnel Live Status
+    codePreview: `# Share Site Tunnel Live Status
 Site: http://cms.test
 Local Port: 8000
 Public HTTPS URL: https://cms-preview-9821.trycloudflare.com
@@ -230,12 +230,12 @@ Incoming Requests:
 [200 OK] GET /api/v1/checkout (Client IP: 142.250.190.46)
 [200 OK] POST /webhooks/hitpay (Payload: 2.4 KB verified)
 [200 OK] GET /assets/app.css`,
-    terminalTitle: 'cloudflared • tunnel active',
+    terminalTitle: 'share-site • tunnel active',
     terminalOutput: `+------------------------------------------------------------------------------------+
-|  Your quick tunnel has been created! Visit it at (SSL):                            |
-|  https://c-script-demo-preview.trycloudflare.com                                   |
+|  localhost.run public URL detected before QR banner output                        |
+|  https://c-script-demo-preview.localhost.run                                      |
 +------------------------------------------------------------------------------------+
-Ready for connections from mobile devices, clients, and remote webhooks.`
+ANSI-clean output • OSC-8 links supported • admin.localhost.run rejected.`
   },
   mail: {
     title: 'Local SMTP Mail Catcher & Email Inspector',

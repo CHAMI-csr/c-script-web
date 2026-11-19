@@ -154,11 +154,43 @@
             </tr>
 
             <tr>
-              <td class="font-semibold text-slate-900 py-4 px-6">Nested &amp; Self-JOIN SQL Autocomplete <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.14</span></td>
+              <td class="font-semibold text-slate-900 py-4 px-6">Nested &amp; Self-JOIN SQL Autocomplete <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">Since v1.2.14</span></td>
               <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Correlated Aliases + Stable Suggestions</td>
               <td class="py-4 px-6 text-slate-500">Basic keyword / table completion</td>
               <td class="py-4 px-6 text-slate-500">Basic editor completion</td>
               <td class="py-4 px-6 text-slate-500">Separate SQL IDE required</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Long SQL Editor, Line Numbers &amp; Autosave <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.15</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Unclipped Scripts + Recovery Drafts</td>
+              <td class="py-4 px-6 text-slate-500">Editor/tool dependent</td>
+              <td class="py-4 px-6 text-slate-500">External editor dependent</td>
+              <td class="py-4 px-6 text-slate-500">External editor / manual saves</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">Reliable Share Site Tunnels <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">Since v1.2.16</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Local Validation + Edge-Ready URLs + Fallback</td>
+              <td class="py-4 px-6 text-slate-500">Manual provider setup</td>
+              <td class="py-4 px-6 text-slate-500">Manual tunnel configuration</td>
+              <td class="py-4 px-6 text-slate-500">Manual tunnel and route setup</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">ngrok Install, Repair &amp; Retry <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.17</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">Managed Setup + Automatic Retry</td>
+              <td class="py-4 px-6 text-slate-500">Manual client setup</td>
+              <td class="py-4 px-6 text-slate-500">Manual client setup</td>
+              <td class="py-4 px-6 text-slate-500">Manual client setup</td>
+            </tr>
+
+            <tr>
+              <td class="font-semibold text-slate-900 py-4 px-6">localhost.run Output &amp; URL Detection <span class="ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-100 text-violet-800">New v1.2.18</span></td>
+              <td class="bg-indigo-50/30 font-bold text-emerald-600 py-4 px-6">ANSI-Safe Parsing + Banner-Proof URLs</td>
+              <td class="py-4 px-6 text-slate-500">Manual output parsing</td>
+              <td class="py-4 px-6 text-slate-500">Manual output parsing</td>
+              <td class="py-4 px-6 text-slate-500">Manual output parsing</td>
             </tr>
 
             <tr>

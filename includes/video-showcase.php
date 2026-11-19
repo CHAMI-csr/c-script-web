@@ -12,7 +12,7 @@
         See C-Script LocalHost Panel in Action.
       </h2>
       <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-        Watch how effortlessly you can launch local projects, use reliable SQL autocomplete in nested queries and self-JOINs, and edit database schemas with safer rename tools.
+        Watch how effortlessly you can launch local projects and share sites with reliable localhost.run URL detection, clean tunnel output, and optional managed ngrok setup.
       </p>
     </div>
 
@@ -31,7 +31,7 @@
       <div class="hidden lg:flex items-center gap-3 absolute -bottom-5 -right-6 z-20 glass-badge px-4 py-2.5 shadow-lg">
         <div class="w-2.5 h-2.5 rounded-full bg-blue-500"></div>
         <div class="text-xs">
-          <span class="font-bold text-slate-900">Cloudflare Tunnel</span>
+          <span class="font-bold text-slate-900">Share Site Tunnel</span>
           <span class="text-slate-500">• Public HTTPS Live</span>
         </div>
       </div>
