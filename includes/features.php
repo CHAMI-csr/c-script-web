@@ -121,14 +121,14 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-cyan-600 uppercase">Zero Port Forwarding</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Instant Cloudflare Public Sharing
+            Reliable Share Site Tunnels
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Need to test webhooks from Stripe or show work to a client? Click "Share to Web" and receive an instant public HTTPS URL via Cloudflare Quick Tunnels. No router setup, no ngrok token required.
+            Since v1.2.16, Share Site validates the local site and waits for Cloudflare readiness with improved SSH fallback. v1.2.18 handles localhost.run QR/ANSI banners without losing the public URL, cleans terminal control codes, and recognizes OSC-8 links or URLs without https://. v1.2.17 added ngrok install/repair and automatic retry; an ngrok authtoken is required for ngrok tunnels.
           </p>
         </div>
         <div class="text-xs font-mono text-slate-500 bg-slate-50 p-2.5 rounded-lg border border-slate-200">
-          https://*.trycloudflare.com
+          localhost.run + Cloudflare • Optional ngrok
         </div>
       </div>
 
@@ -170,11 +170,11 @@
           </div>
           <span class="text-xs font-bold tracking-wider text-amber-600 uppercase">Database Intelligence</span>
           <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">
-            Nested SQL Autocomplete &amp; Database Editing
+            Full-Length SQL Editor, Autosave &amp; Recovery
           </h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Includes a built-in portable MariaDB 11.4 server and auto-detects existing MySQL 8.x services on port 3306. 
-            Column completion now resolves qualified aliases correctly in nested and correlated queries, including self-JOINs that reference the same table more than once. Suggestions show source table, type, and key details with safer popup handling. Database tools also support complete column/index editing, rename, and right-click workflows.
+            Long scripts remain visible and editable beyond the initial viewport—no artificial size limit. Synchronized line numbers stay aligned with unwrapped source lines during horizontal scrolling. SQL changes autosave, Ctrl+S saves directly, Save As is available, and untitled drafts can be recovered after interruptions. Earlier releases also added nested/self-JOIN autocomplete and column, index, and schema editing.
           </p>
         </div>
 
@@ -183,13 +183,13 @@
             <span class="text-emerald-500 font-bold">✓</span> Visual Table Editor
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Nested &amp; Self-JOIN Aliases
+            <span class="text-emerald-500 font-bold">✓</span> Synchronized Line Numbers
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Interactive ER Diagram
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-emerald-500 font-bold">✓</span> Schema &amp; Index Editing
+            <span class="text-emerald-500 font-bold">✓</span> Autosave &amp; Draft Recovery
           </div>
           <div class="flex items-center gap-2">
             <span class="text-emerald-500 font-bold">✓</span> Schema-Aware Mock Data
